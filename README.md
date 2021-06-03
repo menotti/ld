@@ -35,18 +35,18 @@ Horas | Tópico       | Semana | Slides
 2 | Mapas de Karnaugh (iii)					|  6a | [[12](slides/12_karn.pdf)]
 3 | Representação Numérica e Circuitos Aritméticos		|  7a | [[13](slides/13_arit.pdf)]
 3 | Projeto de Circuitos Aritméticos com Verilog		|  7a | [[14](slides/14_verilog.pdf)]
-2 | Circuitos Combinacionais: Multiplexadores			|  8a | [[15](slides/15_mux.pdf)]
-2 | Circuitos Combinacionais: Conversores de Códigos		|  8a | [[16](slides/16_conv.pdf)]
-2 | Circuitos Combinacionais: Outros				|  8a | [[17](slides/17_alu.pdf)]
+2 | Multiplexadores						|  8a | [[15](slides/15_mux.pdf)]
+2 | Conversores de Códigos					|  8a | [[16](slides/16_conv.pdf)]
+2 | Outros Circuitos Combinacionais				|  8a | [[17](slides/17_alu.pdf)]
  ... | **Segunda Parte: Circuitos Sequenciais**			|     |
-2 | Circuitos Sequenciais: Latches e Flip-flops			|  9a | [[18](slides/18_latchff.pdf)]
-2 | Circuitos Sequenciais: Registradores			|  9a | [[19](slides/19_regs.pdf)]
-2 | Circuitos Sequenciais: Implementação em Verilog		|  9a | [[20](slides/20_verilog.pdf)]
-6 | Circuitos Sequenciais: Análise de Tempo			| 10a | [[21](slides/21_temp.pdf)] //Caixa D'agua
-2 | Circuitos Sequenciais: Máquinas de Estados Finitos (i)	| 11a | [[22](slides/22_fsm.pdf)]
-2 | Circuitos Sequenciais: Máquinas de Estados Finitos (ii)	| 11a | [[23](slides/23_fsm.pdf)]
-1 | Circuitos Sequenciais: Máquinas de Estados Finitos (iii)	| 11a | [[24](slides/24_fsm.pdf)]
-1 | Circuitos Sequenciais: Máquinas de Estados Finitos (iv)	| 11a | [[25](slides/25_fsm.pdf)]
+2 | Latches e Flip-flops					|  9a | [[18](slides/18_latchff.pdf)]
+2 | Registradores						|  9a | [[19](slides/19_regs.pdf)]
+2 | Implementação em Verilog					|  9a | [[20](slides/20_verilog.pdf)]
+6 | Análise de Tempo						| 10a | [[21](slides/21_temp.pdf)]
+2 | Máquinas de Estados Finitos	(i)				| 11a | [[22](slides/22_fsm.pdf)]
+2 | Máquinas de Estados Finitos	(ii)				| 11a | [[23](slides/23_fsm.pdf)]
+1 | Máquinas de Estados Finitos	(iii)				| 11a | [[24](slides/24_fsm.pdf)]
+1 | Máquinas de Estados Finitos	(iv)				| 11a | [[25](slides/25_fsm.pdf)]
 3 | Minimização	de Máquinas de Estados Finitos			| 12a | [[26](slides/26_mini.pdf)]
 3 | Análise de Circuitos Sequenciais				| 12a | [[27](slides/27_analise.pdf)]
 6 | Estruturas de Barramentos					| 13a | [[28](slides/28_bar.pdf)]
@@ -54,8 +54,8 @@ Horas | Tópico       | Semana | Slides
 3 | Exercício: Semáforo						| 14a | [[30](slides/30_sinal.pdf)]
 6 | Avaliações							| 15a | 
 
-
 ## OBJETIVOS ESPECÍFICOS:
+
 Ao final do curso os participantes deverão ser capazes de:
 - Reconhecer funções lógicas e suas aplicações;
 - Aplicar métodos de síntese de funções lógicas realizando otimizações;
@@ -65,12 +65,14 @@ Ao final do curso os participantes deverão ser capazes de:
 - Criar e testar circuitos lógicos, garantindo seu correto funcionamento.
 
 ## ESTRATÉGIA DE ENSINO:
+
 Em todos os tópicos de conteúdo as seguintes estratégias de ensino serão adotadas:
 - Aulas expositivas assíncronas (videoaulas) versando sobre a temática do tópico;
 - Elaboração de exercícios individuais (questionários) para consolidação da teoria;
 - Práticas de laboratório (simulações) em grupos para consolidação da teoria e das habilidades técnicas.
 
 ## ATIVIDADES DOS ALUNOS:
+
 - Assistir às videoaulas gravadas, com duração total média de 40 minutos;
 - Ler o material recomendado (e complementar), o que poderá ser feito antes ou depois de assistir a videoaula, e para o que se estima uma duração total de 20 a 40 minutos;
 - Responder a um questionário individual no AVA, o que será usado para contabilizar a frequência nesta semana, atividade para a qual se estima uma duração de 15 a 30 minutos;
@@ -78,6 +80,7 @@ Em todos os tópicos de conteúdo as seguintes estratégias de ensino serão ado
 - Participar de dois momentos avaliativos por videoconferência, agendados previamente com os professores, conforme especificado na seção Procedimentos de avaliação do aluno.
 
 ## RECURSOS A SEREM UTILIZADOS:
+
 - Ambiente virtual de aprendizagem (AVA) que, no caso desta disciplina, será o [Moodle UFSCar](https://ava2.ead.ufscar.br/);
 - Videoaulas gravadas e disponibilizadas no YouTube e no AVA;
 - Webconferências via Google Meet nas quais os alunos só poderão participar usando o email institucional;
