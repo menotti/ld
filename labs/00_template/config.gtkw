@@ -1,0 +1,22 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Fri Dec  3 14:06:11 2021
+[*]
+[dumpfile] "/home/menotti/Workspace/ld/labs/00_template/dump.vcd"
+[dumpfile_mtime] "Fri Dec  3 14:05:47 2021"
+[dumpfile_size] 312
+[savefile] "/home/menotti/Workspace/ld/labs/00_template/config.gtkw"
+[timestart] 0
+[size] 1242 737
+[pos] -1 -1
+*-2.223996 19 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_top.
+[sst_width] 213
+[signals_width] 78
+[sst_expanded] 1
+[sst_vpaned_height] 200
+@28
+tb_top.dut.in
+tb_top.dut.out
+[pattern_trace] 1
+[pattern_trace] 0
