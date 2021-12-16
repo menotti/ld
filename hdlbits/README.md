@@ -15,4 +15,8 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
 - [Módulo](20_module)
 - [Três módulos](23_module_shift)
 - [Módulos e vetores](24_module_shift8)
+- [Somador carry-select](27_module_cseladd)
+- [Somador-subtrator](28_module_addsub)
+- [Blocos `always` combinacionais](29_alwaysblock1)
+- [Blocos `always` com _clock_](30_alwaysblock2)
 
