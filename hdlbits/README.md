@@ -4,7 +4,18 @@ Nesta pasta estão soluções explicadas para problemas retirados do site [HDLBi
 
 Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando tradução automática](https://hdlbits-01xz-net.translate.goog/wiki/Main_Page?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=en-US), mas deve submeter as soluções na janela original em inglês, pois o tradutor impede o funcionamento correto do site. 
 
-***<span style="color:blue">Importante:</span> tente resolver os problemas sozinho, sem olhar as repostas. Depois compare a sua solução com o gabarito do site e com a que está neste repositório.*** *Se você não conseguir resolver alguns deles, depois de tentar bastante, tudo bem olhar as respostas, mas procure ao menos digitar o código (isso ajuda a memorizar) ao invés de copiar/colar e tente resolvê-lo sozinho em outra oportunidade.* ***Assim como em programação, no projeto de hardware, ver respostas de problemas resolvidos não ajuda quase nada!***  
+```diff
+-                                                                                                     
+-                     -  -  =  =  <  <    I M P O R T A N T E    >  >  =  =  -  -                     
+-                                                                                                     
+- Tente resolver os problemas sozinho, sem olhar as repostas.                                         
+! Depois compare a sua solução com o gabarito do site e com a que está neste repositório.             
++ Se você não conseguir resolver alguns deles, depois de tentar bastante, tudo bem olhar as respostas,
++ mas procure ao menos digitar o código (isso ajuda a memorizar) ao invés de copiar/colar e           
+@@ tente resolvê-lo sozinho em outra oportunidade.                                                  @@
+- Assim como em programação, no projeto de hardware, ver respostas de problemas resolvidos            
+@@ não ajuda quase nada!                                                                            @@
+```
 
 ## Índice dos problemas
 
