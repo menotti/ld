@@ -22,3 +22,5 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
 - [Comando `if`](31_always_if)
 - [Comando `if` inferindo _latch_](32_always_if2)
 - [Evitando _latches_](36_always_nolatches)
+- [Inversão de vetor com `for`](40_vector100r)
+- [Contagem de bits 1](41_popcount255)
