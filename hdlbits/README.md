@@ -46,4 +46,5 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
 - [Registrador 8 bit reset síncrono](84_dff8p)
 - [Registrador 8 bit reset assíncrono](85_dff8ar)
 - [Mux e flip-flop](92_exams_2014_q4a)
+- [Detector de borda](95_edgedetect)
 
