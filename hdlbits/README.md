@@ -9,4 +9,9 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
 - [Passo um](01_step_one) 
 - [Quatro fios](04_wire4)
 - [CI 7458](10_7458)
+- [Vetores em mais detalhes](12_vector1)
+- [Operador bit a bit](14_vector2)
+- [Operador de replicação](18_vector4)
+- [Módulo](20_module)
+- [Três módulos](23_module_shift)
 
