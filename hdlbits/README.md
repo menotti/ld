@@ -30,4 +30,9 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
 - [Igualdade entre 2 bits](52_t2015_eq2)
 - [Tocar ou vibrar?](56_ringer)
 - [Vetores ainda mais longos](60_gatesv100)
+- [Multiplexador 256x1](64_mux256to1)
+- [Multiplexador 4 bits 256x1](65_mux256to1v)
+- [Registrador 8 bit reset síncrono](84_dff8p)
+- [Registrador 8 bit reset assíncrono](85_dff8ar)
+- [Mux e flip-flop](92_exams_2014_q4a)
 
