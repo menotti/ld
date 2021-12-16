@@ -21,3 +21,4 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
 - [Blocos `always` com _clock_](30_alwaysblock2)
 - [Comando `if`](31_always_if)
 - [Comando `if` inferindo _latch_](32_always_if2)
+- [Evitando _latches_](36_always_nolatches)
