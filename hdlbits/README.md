@@ -19,4 +19,5 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
 - [Somador-subtrator](28_module_addsub)
 - [Blocos `always` combinacionais](29_alwaysblock1)
 - [Blocos `always` com _clock_](30_alwaysblock2)
-
+- [Comando `if`](31_always_if)
+- [Comando `if` inferindo _latch_](32_always_if2)
