@@ -24,3 +24,8 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
 - [Evitando _latches_](36_always_nolatches)
 - [Inversão de vetor com `for`](40_vector100r)
 - [Contagem de bits 1](41_popcount255)
+- [Tabela verdade](51_truthtable1)
+- [Igualdade entre 2 bits](52_t2015_eq2)
+- [Tocar ou vibrar?](56_ringer)
+- [Vetores ainda mais longos](60_gatesv100)
+
