@@ -14,4 +14,5 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
 - [Operador de replicação](18_vector4)
 - [Módulo](20_module)
 - [Três módulos](23_module_shift)
+- [Módulos e vetores](24_module_shift8)
 
