@@ -49,6 +49,9 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
 - [Detector de borda](095_edgedetect)
 - [Contador de década](100_count10)
 - [LUT de 3 entradas](115_exams_ece241_2013_q12)
+- [Regra 90](116_rule90)
 - [FSM reset assíncrono](119_fsm1)
 - [FSM reset síncrono](120_fsm1s)
+- [Reservatório](127_exams_ece241_2013_q4)
+
 
