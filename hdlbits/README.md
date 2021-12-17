@@ -54,5 +54,8 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
 - [FSM reset síncrono](120_fsm1s)
 - [Reservatório](127_exams_ece241_2013_q4)
 - [Mealy 101](139_exams_ece241_2013_q8)
+- [Bugs nand3](160_bugs_nand3)
+- [Simulação Comb. 1](164_sim_circuit1)
+- [Simulação Seq. 7](170_sim_circuit7)
 
 
