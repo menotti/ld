@@ -57,5 +57,6 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
 - [Bugs nand3](160_bugs_nand3)
 - [Simulação Comb. 1](164_sim_circuit1)
 - [Simulação Seq. 7](170_sim_circuit7)
+- [Test bench clock](174_tb_clock)
 
 
