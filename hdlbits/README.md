@@ -63,6 +63,15 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
 - [Simulação Seq. 7](170_sim_circuit7)
 - [Test bench clock](174_tb_clock)
 
+## Contribuições
+
+- Para criar contribuições com novos exercícios resolvidos, escolha o _branch_ `gabaritos`.
+- A numeração das pastas deve ser a que está [nesta lista](https://hdlbits.01xz.net/wiki/Special:VlgStats).
+- Sua requisição deve incluir:
+  * Uma nova entrada na lista acima, apontando para...
+  * Uma nova pasta contendo:
+    + (i) um arquivo Verilog com o mesmo nome da pasta (exceto o número inicial), aceito pelo sistema como uma solução válida para o problema;
+    + (ii) um arquivo README.md com uma breve explicação para o problema.
 
 
 
