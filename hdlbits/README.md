@@ -21,9 +21,11 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
 
 - [Passo um](001_step_one) 
 - [Quatro fios](004_wire4)
+- [Declarando fios](009_wire_decl)
 - [CI 7458](010_7458)
 - [Vetores em mais detalhes](012_vector1)
-- [Operador bit a bit](014_vector2)
+- [Seleção de parte vetorial](013_vector2)
+- [Operador bit a bit](014_vectorgates)
 - [Operador de replicação](018_vector4)
 - [Módulo](020_module)
 - [Três módulos](023_module_shift)
@@ -48,15 +50,19 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
 - [Mux e flip-flop](092_exams_2014_q4a)
 - [Detector de borda](095_edgedetect)
 - [Contador de década](100_count10)
+- [Relógio de 12 horas](106_count_clock)
 - [LUT de 3 entradas](115_exams_ece241_2013_q12)
 - [Regra 90](116_rule90)
 - [FSM reset assíncrono](119_fsm1)
 - [FSM reset síncrono](120_fsm1s)
 - [Reservatório](127_exams_ece241_2013_q4)
+- [Receptor serial](135_fsm_serial)
 - [Mealy 101](139_exams_ece241_2013_q8)
 - [Bugs nand3](160_bugs_nand3)
 - [Simulação Comb. 1](164_sim_circuit1)
 - [Simulação Seq. 7](170_sim_circuit7)
 - [Test bench clock](174_tb_clock)
+
+
 
 
