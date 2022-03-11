@@ -15,7 +15,7 @@ for link in lines:
         solved = []
         for el in doc.find_class('vlgstat_link'):
             solved.append(el.text_content())
-        print('  ', len(solved), 'problemas resolvidos pelo professor!') 
+        print(' ', len(solved), 'problemas resolvidos pelo professor!') 
     else:
         total = 0
         new = 0
@@ -23,4 +23,4 @@ for link in lines:
             if not el.text_content() in solved:
                 new += 1
             total += 1
-        print('    resolveu', total, 'problemas, sendo', new, 'novos:', math.trunc(new/(total+0.0000000000001)*100), '%') 
+        print('  resolveu', total, 'problemas, sendo', new, 'novos:', math.trunc(new/(total+0.0000000000001)*100), '%') 
