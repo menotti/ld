@@ -1,0 +1,3 @@
+# Explicação
+
+Uma vez que o submódulos desses circuitos não foram encontrados para fazer essa implementação de forma hierárquica, as funções foram criadas novamente. Um wire de 2-bit é suficiente porque os circuitos iguais usam as mesmas entradas x e y. O Circuito A implementa a função lógica (x^y) & x e o Circuito B corresponde a uma porta XOR negada (~XOR). Suas saídas são então recombinadas em portas OR, AND e XOR.
