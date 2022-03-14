@@ -31,6 +31,7 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
 - [Três módulos](023_module_shift)
 - [Módulos e vetores](024_module_shift8)
 - [Módulo somador](025_module_add)
+- [Módulo somador completo](026_module_fadd) 
 - [Somador carry-select](027_module_cseladd)
 - [Somador-subtrator](028_module_addsub)
 - [Blocos `always` combinacionais](029_alwaysblock1)
