@@ -37,7 +37,7 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
 - [Blocos `always` com _clock_](030_alwaysblock2)
 - [Comando `if`](031_always_if)
 - [Comando `if` inferindo _latch_](032_always_if2)
-- [Bloco `always` com _casez_](035_always_casez)
+- [Bloco `always` com `casez`](035_always_casez)
 - [Evitando _latches_](036_always_nolatches)
 - [Inversão de vetor com `for`](040_vector100r)
 - [Contagem de bits 1](041_popcount255)
