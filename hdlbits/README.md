@@ -36,7 +36,7 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
 - [Blocos `always` com _clock_](030_alwaysblock2)
 - [Comando `if`](031_always_if)
 - [Comando `if` inferindo _latch_](032_always_if2)
-- [Instrução `case` aplicado em um encoder de prioridade](034_always_case2)
+- [Enconder com prioridade usando `case`](034_always_case2)
 - [Evitando _latches_](036_always_nolatches)
 - [Inversão de vetor com `for`](040_vector100r)
 - [Contagem de bits 1](041_popcount255)
