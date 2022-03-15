@@ -27,6 +27,7 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
 - [Seleção de parte vetorial](013_vector2)
 - [Operador bit a bit](014_vectorgates)
 - [Operador de replicação](018_vector4)
+- [Mais operadores de replicação](019_vector5)
 - [Módulo](020_module)
 - [Três módulos](023_module_shift)
 - [Módulos e vetores](024_module_shift8)
