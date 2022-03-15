@@ -2,7 +2,6 @@ module top_module (
 	input [3:0] in,
 	output reg [1:0] pos
 );
-
 	always @(*) begin			
 		case (in)
 			4'b0000: pos = 2'h0;	
@@ -24,5 +23,4 @@ module top_module (
 			default: pos = 2'b0;
 		endcase
 	end
-
 endmodule
