@@ -42,6 +42,7 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
 - [Evitando _latches_](036_always_nolatches)
 - [Inversão de vetor com `for`](040_vector100r)
 - [Contagem de bits 1](041_popcount255)
+- [Somador BCD de 100 dígitos](043_bcdadd100)
 - [Tabela verdade](051_truthtable1)
 - [Igualdade entre 2 bits](052_t2015_eq2)
 - [Tocar ou vibrar?](056_ringer)
