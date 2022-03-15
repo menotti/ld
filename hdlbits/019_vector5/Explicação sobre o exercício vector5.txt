@@ -1,0 +1,3 @@
+O código concatena dois vetores através dos inputs
+Essas concatenações são os dois vetores que desejamos comparar de fato
+Como já temos ambos os vetores resolvidos podemos apenas realisar o XNOR que o comando fará todas as comparações e nos dará o vetor resultante de saída
