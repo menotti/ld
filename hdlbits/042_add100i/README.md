@@ -1,0 +1,1 @@
+Nesse programa foi necessário utilizar a estrutura "generate" para criar um loop for que instancia os somadores e os conecta, sendo preciso apenas instanciar o primeiro e o último, que são casos diferentes.
