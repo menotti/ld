@@ -62,6 +62,7 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
 - [Simulação Comb. 1](164_sim_circuit1)
 - [Simulação Seq. 7](170_sim_circuit7)
 - [Test bench clock](174_tb_clock)
+- [Contador 100 bits](042_add100i)
 
 
 
