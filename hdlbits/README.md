@@ -40,7 +40,7 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
 - [Comando `if`](031_always_if)
 - [Comando `if` inferindo _latch_](032_always_if2)
 - [Enconder com prioridade usando `case`](034_always_case2)
-- [Bloco `always` com `casez`](035_always_casez)
+- [Enconder com prioridade usando `casez`](035_always_casez)
 - [Evitando _latches_](036_always_nolatches)
 - [Inversão de vetor com `for`](040_vector100r)
 - [Contagem de bits 1](041_popcount255)
