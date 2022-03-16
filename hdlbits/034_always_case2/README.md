@@ -1,6 +1,6 @@
 # Explicação
 
-Para este exercício será empregada a estrutura da instrução `case` dentro do bloco `always`, da seginte forma:
+Para este exercício será empregada a estrutura da instrução `case` dentro do bloco `always`, da seguinte forma:
 
 ```verilog
 always @(*) begin			
