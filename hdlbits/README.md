@@ -44,6 +44,7 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
 - [Evitando _latches_](036_always_nolatches)
 - [Inversão de vetor com `for`](040_vector100r)
 - [Contagem de bits 1](041_popcount255)
+- [Contador 100 bits](042_add100i)
 - [Somador BCD de 100 dígitos](043_bcdadd100)
 - [Tabela verdade](051_truthtable1)
 - [Igualdade entre 2 bits](052_t2015_eq2)
@@ -80,6 +81,3 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
   * Uma nova pasta contendo:
     + (i) um arquivo Verilog com o mesmo nome da pasta (exceto o número inicial), aceito pelo sistema como uma solução válida para o problema;
     + (ii) um arquivo README.md com uma breve explicação para o problema.
-
-
-
