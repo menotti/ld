@@ -42,6 +42,7 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
 - [Contagem de bits 1](041_popcount255)
 - [Tabela verdade](051_truthtable1)
 - [Igualdade entre 2 bits](052_t2015_eq2)
+- [Circuitos A e B combinados](055_mt2015_q4)
 - [Tocar ou vibrar?](056_ringer)
 - [Vetores ainda mais longos](060_gatesv100)
 - [Multiplexador 256x1](064_mux256to1)
