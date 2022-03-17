@@ -27,19 +27,25 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
 - [Seleção de parte vetorial](013_vector2)
 - [Operador bit a bit](014_vectorgates)
 - [Operador de replicação](018_vector4)
+- [Mais operadores de replicação](019_vector5)
 - [Módulo](020_module)
 - [Três módulos](023_module_shift)
 - [Módulos e vetores](024_module_shift8)
+- [Módulo somador](025_module_add)
+- [Módulo somador completo](026_module_fadd) 
 - [Somador carry-select](027_module_cseladd)
 - [Somador-subtrator](028_module_addsub)
 - [Blocos `always` combinacionais](029_alwaysblock1)
 - [Blocos `always` com _clock_](030_alwaysblock2)
 - [Comando `if`](031_always_if)
 - [Comando `if` inferindo _latch_](032_always_if2)
+- [Enconder com prioridade usando `case`](034_always_case2)
+- [Enconder com prioridade usando `casez`](035_always_casez)
 - [Evitando _latches_](036_always_nolatches)
 - [Inversão de vetor com `for`](040_vector100r)
 - [Contagem de bits 1](041_popcount255)
 - [Contador 100 bits](042_add100i)
+- [Somador BCD de 100 dígitos](043_bcdadd100)
 - [Tabela verdade](051_truthtable1)
 - [Igualdade entre 2 bits](052_t2015_eq2)
 - [Tocar ou vibrar?](056_ringer)
@@ -57,9 +63,21 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
 - [FSM reset assíncrono](119_fsm1)
 - [FSM reset síncrono](120_fsm1s)
 - [Reservatório](127_exams_ece241_2013_q4)
+- [Máquina de estados finitos _one-hot_](132_fsm_onehot)
 - [Receptor serial](135_fsm_serial)
 - [Mealy 101](139_exams_ece241_2013_q8)
 - [Bugs nand3](160_bugs_nand3)
 - [Simulação Comb. 1](164_sim_circuit1)
 - [Simulação Seq. 7](170_sim_circuit7)
 - [Test bench clock](174_tb_clock)
+
+## Contribuições
+
+- Para criar contribuições com novos exercícios resolvidos, escolha o _branch_ `gabaritos`.
+- A numeração das pastas deve ser a que está [nesta lista](https://hdlbits.01xz.net/wiki/Special:VlgStats).
+- Sua requisição deve incluir:
+  * Uma nova entrada na lista acima, apontando para...
+  * Uma nova pasta contendo:
+    + (i) um arquivo Verilog com o mesmo nome da pasta (exceto o número inicial), aceito pelo sistema como uma solução válida para o problema;
+    + (ii) um arquivo README.md com uma breve explicação para o problema.
+
