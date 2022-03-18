@@ -1,0 +1,1 @@
+Se o reset vai de 0 -> 1 temos que "q" é resetado e q = 0, mas se reset estiver contante e o clock for de 0 -> 1 temo que o estado de "d" é copiado em "q". Ou seja, q = 0 quando o reset vai a 0 e q = d quando o clock vai a 1.
