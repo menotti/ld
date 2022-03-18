@@ -47,7 +47,7 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
 - [Multiplexador 4 bits 256x1](065_mux256to1v)
 - [Registrador 8 bit reset síncrono](084_dff8p)
 - [Registrador 8 bit reset assíncrono](085_dff8ar)
-- [Flip-flop D com reset assíncrono](088_Examsm2014_q4b)
+- [Flip-flop D com reset assíncrono](088_Exams_m2014_q4b)
 - [Mux e flip-flop](092_exams_2014_q4a)
 - [Detector de borda](095_edgedetect)
 - [Contador de década](100_count10)
