@@ -45,6 +45,7 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
 - [Vetores ainda mais longos](060_gatesv100)
 - [Multiplexador 256x1](064_mux256to1)
 - [Multiplexador 4 bits 256x1](065_mux256to1v)
+- [Adicionador de 3 bits de carry](068_Adder3)
 - [Registrador 8 bit reset síncrono](084_dff8p)
 - [Registrador 8 bit reset assíncrono](085_dff8ar)
 - [Mux e flip-flop](092_exams_2014_q4a)
