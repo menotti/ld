@@ -1,0 +1,1 @@
+A implementação refere-se a um flip-flop D com reset assíncrono (porta `ar`). Nota-se que tanto `clk` quanto `ar` disparam o `always` em suas bordas de subida (`posedge`), mas o nível de `ar` é testado internamente. Portanto, `ar == 1` reseta o circuito, independentemente de `clk`, caso contrário, ele trasfere o valor de entrada para a saída na borda de subida de `clk`.
