@@ -3,11 +3,16 @@
 import urllib.request
 import lxml.html
 import math
+import ssl 
+
+ctx = ssl.create_default_context()
+ctx.check_hostname = False
+ctx.verify_mode = ssl.CERT_NONE
 
 with open('links.txt') as f:
     lines = f.readlines()
 for link in lines:
-    content = urllib.request.urlopen(link).read()
+    content = urllib.request.urlopen(link, context=ctx).read()
     doc = lxml.html.fromstring(content)
     for el in doc.find_class('title'):
         print(link, el.text_content())
