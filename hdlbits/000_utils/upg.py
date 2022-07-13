@@ -4,8 +4,8 @@ files = os.listdir()
 files.sort()
 prefix = "Group "
 for filename in files:
-    if prefix != filename[:7]:
-        prefix = filename[:7]
+    if prefix != filename[:8]:
+        prefix = filename[:8]
         print("keep:", filename)
     else:
         os.unlink(filename)
