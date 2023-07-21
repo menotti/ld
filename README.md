@@ -93,6 +93,7 @@ exercícios;
 
 ## REFERÊNCIAS
 
+- [Ricardo dos Santos Ferreira e Ricardo Menotti, Introdução à Lógica Digital com Verilog, 2023](Livro.ipynb)
 - [Stephen Brown and Zvonko Vranesic, Fundamentals of Digital Logic with Verilog Design (3<sup>rd</sup> Edition), 2014](https://www.mheducation.com/highered/product/fundamentals-digital-logic-verilog-design-brown-vranesic/M9780073380544.html)
 - [Deepak Kumar Tala, World of ASIC, 2014](https://asic-world.com/)
 - [HDLBits — Verilog Practice](https://hdlbits.01xz.net/wiki/Main_Page)

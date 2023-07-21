@@ -28,4 +28,4 @@ A seguir está um sugestão de ordem para a compreensão dos exemplos:
 * [Contador Síncrono (comportamental)](https://github.dev/menotti/ld/digitaljs/counterb.v)
 * [Contador Johnson (estrutural)](https://github.dev/menotti/ld/digitaljs/johnsons.v)
 * [Contador Johnson (comportamental)](https://github.dev/menotti/ld/digitaljs/johnsonb.v)
-
+* [Contador Síncrono incr./decr. com carga (comportamental)](https://github.dev/menotti/ld/digitaljs/updown_load_counter.v))
