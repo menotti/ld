@@ -12,6 +12,7 @@ Em geral, salvamos apenas o arquivo .v,  basta gerar um novo circuito a partir d
 
 A seguir está um sugestão de ordem para a compreensão dos exemplos:
 
+* [Multiplexador](https://github.dev/menotti/ld/digitaljs/mux4.v)
 * [Latch SR](https://github.dev/menotti/ld/digitaljs/latchSR.v)
 * [Latch SR (com enable)](https://github.dev/menotti/ld/digitaljs/latchSRen.v)
 * [Latch D](https://github.dev/menotti/ld/digitaljs/latchD.v)
