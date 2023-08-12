@@ -7,6 +7,7 @@ Isso pode ser feito de várias formas:
 * [Online](https://digitaljs.tilk.eu/)
 * [No VS Code](https://marketplace.visualstudio.com/items?itemName=yuyichao.digitaljs)
 * [Online no VS Code](https://github.dev/menotti/ld/digitaljs/)
+* [Verilog Highlight*](https://marketplace.visualstudio.com/items?itemName=tzylee.verilog-highlight) (opcional)
 
 Em geral, salvamos apenas o arquivo .v,  basta gerar um novo circuito a partir dele e fazer a simulação. Em alguns exemplos, organizamos os componentes para que o circuito possa ser reconhecido mais facilmente, então salvamos também o arquivo .digitaljs. 
 
