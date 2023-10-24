@@ -13,7 +13,7 @@ Em geral, salvamos apenas o arquivo .v,  basta gerar um novo circuito a partir d
 
 A seguir está um sugestão de ordem para a compreensão dos exemplos:
 
-* [Básico](https://github.dev/menotti/ld/digitaljs/basics.v))
+* [Básico](https://github.dev/menotti/ld/digitaljs/basics.v)
 * [Multiplexador 4x1](https://github.dev/menotti/ld/digitaljs/mux4.v)
 * [Multiplexador 4x2](https://github.dev/menotti/ld/digitaljs/mux4to2.v)
 * [Codificador com prioridade 4x2](https://github.dev/menotti/ld/digitaljs/priority_encoder_4x2.v)
