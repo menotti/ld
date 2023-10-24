@@ -30,6 +30,7 @@ A seguir está um sugestão de ordem para a compreensão dos exemplos:
 * [Flip-flop T (estrutural)](https://github.dev/menotti/ld/digitaljs/FFTs.v)
 * [Flip-flop T (comportamental)](https://github.dev/menotti/ld/digitaljs/FFTb.v)
 * [Flip-flop JK (comportamental)](https://github.dev/menotti/ld/digitaljs/FFJKb.v)
+* [Fibonacci (comportamental)](https://github.dev/menotti/ld/digitaljs/fibonacci.v)
 * [Contador Assíncrono (estrutural)](https://github.dev/menotti/ld/digitaljs/counters.v)
 * [Contador Síncrono (comportamental)](https://github.dev/menotti/ld/digitaljs/counterb.v)
 * [Contador Johnson (estrutural)](https://github.dev/menotti/ld/digitaljs/johnsons.v)
