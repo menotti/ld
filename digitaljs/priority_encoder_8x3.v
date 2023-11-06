@@ -1,3 +1,9 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ * Module: Priority Encoder 8x3                                              * 
+ * Verilog style: Structural                                                 * 
+ * Author: Ricardo Menotti <menotti AT ufscar DOT br>                        * 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
 module priority_encoder_8x3 (
   input [7:0] W,
   output reg [2:0] Y,

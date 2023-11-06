@@ -1,3 +1,9 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ * Module: Priority Encoder 4x2                                              * 
+ * Verilog style: Behavioral                                                 * 
+ * Author: Ricardo Menotti <menotti AT ufscar DOT br>                        * 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
 module priority_encoder_4x2(
   input [3:0] W,
   output reg [1:0] Y,
