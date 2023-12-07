@@ -20,7 +20,13 @@ Se você não lê bem em inglês, pode abrir uma segunda janela do site [usando 
 ## Índice dos problemas
 
 - [Passo um](001_step_one) 
+- [Zero](002_zero)
+- [Fio](003_wire)
 - [Quatro fios](004_wire4)
+- [Porta NOT](005_notgate)
+- [Porta AND](006_andgate)
+- [Porta NOR](007_norgate)
+- [Porta XNOR](008_xnorgate)
 - [Declarando fios](009_wire_decl)
 - [CI 7458](010_7458)
 - [Vetores em mais detalhes](012_vector1)
