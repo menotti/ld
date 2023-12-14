@@ -2,9 +2,9 @@
 CC=iverilog 
 FLAGS=-Wall
 # http://gtkwave.sourceforge.net/
-#VIEWER=gtkwave
+VIEWER=gtkwave
 # https://github.com/yne/vcd
-VIEWER=../../../vcd/vcd < 
+#VIEWER=../../../vcd/vcd < 
 # https://drom.io/vcd/?github=menotti/ld/master/labs/00_template/dump.vcd
 simul: *.v
 	$(CC) $(FLAGS) *.v 
