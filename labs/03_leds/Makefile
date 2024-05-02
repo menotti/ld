@@ -1,7 +1,7 @@
-CC=iverilog 
-FLAGS=-Wall
-VIEWER=code
+CC = iverilog 
+FLAGS = -Wall
+VIEWER = gtkwave
 all: *.v
 	$(CC) $(FLAGS) *.v 
 	vvp a.out
-	$(VIEWER) dump.vcd
+	$(VIEWER) dump.vcd config.gtkw
