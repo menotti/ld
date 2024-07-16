@@ -1,7 +1,7 @@
 module tb_top; 
   reg clk, x1, x2, x3, s0, s1;
   wire xfe, xff;
-  reg [31:0] vectornum;
+  reg [31:0] vectornum, errors;
   reg [5:0] testvectors[100:0];
   
   // Instantiate design under test
@@ -15,7 +15,7 @@ module tb_top;
   initial begin
     // at start of test, load vectors
     $readmemb("values.tv", testvectors);
-    vectornum = 0; 
+    vectornum = 0; errors = 0;
     // Dump waves
     $dumpfile("dump.vcd");
     $dumpvars(0);
@@ -29,6 +29,7 @@ module tb_top;
     x3 = testvectors[vectornum][2];
     s0 = testvectors[vectornum][3];
     s1 = testvectors[vectornum][4];
+    // xf = 
   end
   
   // check results on falling edge of clock
@@ -38,9 +39,12 @@ module tb_top;
     vectornum = vectornum + 1;
     if (testvectors[vectornum][0] === 1'bx) begin
       $display("%d tests completed!", vectornum);
-      $stop;
+      $finish;
     end
+    // else
+    //   if (xf != xfe || xf != xff ) begin
+    //     errors = errors + 1;
+    //   end
   end  
 
 endmodule
-
