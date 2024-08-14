@@ -1,0 +1,116 @@
+\include{00newheader}
+
+\subtitle{Circuitos Sequenciais: Registradores} % 
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame} 
+
+\section{Circuitos Sequenciais}
+
+\begin{frame}{Objetivos}   %\centering
+    Nesta aula vamos aprender sobre:
+    \begin{itemize}
+        \item Registradores, os quais armazenam vários bits;
+        \item Registradores de deslocamento;
+        \item Contadores de vários tipos.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Registrador de deslocamento}   \centering
+    \includegraphics[height=.95\textheight]{VerilogFig5_17} \\
+\end{frame}
+
+\begin{frame}{Registrador de deslocamento com carga paralela}   \centering
+    \includegraphics[height=.95\textheight]{VerilogFig5_18} \\
+\end{frame}
+
+\begin{frame}{Contador de três bits}   \centering
+    \includegraphics[height=.95\textheight]{VerilogFig5_19} \\
+\end{frame}
+
+\begin{frame}{Contador de três bits (decremento)}   \centering
+    \includegraphics[height=.95\textheight]{VerilogFig5_20} \\
+\end{frame}
+
+\begin{frame}{}   \centering
+	\begin{columns}
+        \column{0.6\textwidth}
+    \includegraphics[width=\textwidth]{VerilogTab5_1} \\
+        \column{0.4\textwidth}
+        $T_0 = 1$ \\
+        $T_1 = Q_0$ \\
+        $T_2 = Q_0Q_1$ \\
+        $T_3 = Q_0Q_1Q_2$ \\
+        . \\
+        . \\
+        . \\
+        $T_n = Q_0Q_1...Q_{n-1}$ \\
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Contador de 4 bits síncrono}   \centering
+    \includegraphics[height=.95\textheight]{VerilogFig5_21} \\
+\end{frame}
+
+\begin{frame}{Contador de 4 bits síncrono com \textit{enable}}   \centering
+    \includegraphics[width=\textwidth]{VerilogFig5_22} \\
+\end{frame}
+
+\begin{frame}{Usando flip-flops do tipo D}   \centering
+	\begin{columns}
+        \column{0.6\textwidth}
+    \includegraphics[height=.95\textheight]{VerilogFig5_23} \\
+        \column{0.4\textwidth}
+        $D_0 = Q_0 \oplus 1 = \overline{Q}_0$ \\
+        $D_1 = Q_1 \oplus Q_0$ \\
+        $D_2 = Q_2 \oplus Q_1Q_0$ \\
+        $D_3 = Q_3 \oplus Q_2Q_1Q_0$ \\
+        . \\
+        . \\
+        . \\
+        $D_i = Q_i \oplus Q_{i-1}Q_{i-2}...Q_1Q_0$ \\
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Contador com carga paralela}   \centering
+    \includegraphics[height=.95\textheight]{VerilogFig5_24} \\
+\end{frame}
+
+\begin{frame}{Contador módulo-6 com reset síncrono}   \centering
+    \includegraphics[height=.95\textheight]{VerilogFig5_25} \\
+\end{frame}
+
+\begin{frame}{Contador módulo-6 com reset assíncrono}   \centering
+    \includegraphics[height=.95\textheight]{VerilogFig5_26} \\
+\end{frame}
+
+\begin{frame}{Contador BCD de dois dígitos}   \centering
+    \includegraphics[height=.95\textheight]{VerilogFig5_27} \\
+\end{frame}
+
+\begin{frame}{Contador em anel}   \centering
+    \includegraphics[height=.95\textheight]{VerilogFig5_28} \\
+\end{frame}
+
+\begin{frame}{Contador Johnson}   \centering
+    \includegraphics[height=.95\textheight]{VerilogFig5_29} \\
+\end{frame}
+
+
+
+\begin{frame}{Bibliografia} 
+	\begin{itemize}
+		\item \href{https://www.google.com.br/search?q=filetype\%3Apdf+Fundamentals+of+Digital+Logic+with+Verilog+Design+&oq=filetype\%3Apdf}{Brown, S. \& Vranesic, Z. - Fundamentals of Digital Logic with Verilog Design, 3rd Ed., Mc Graw Hill, 2009}
+		\item \href{https://tams-www.informatik.uni-hamburg.de/applets/hades/}{https://tams-www.informatik.uni-hamburg.de/applets/hades/}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\titlepage
+\end{frame} 
+
+
+\end{document}

@@ -1,0 +1,59 @@
+\include{00newheader}
+
+\subtitle{Máquinas de Estados Finitos: Exercícios} % 
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame} 
+
+\begin{frame}{Problema}
+    \begin{itemize}
+     \item Entradas: 
+        \begin{itemize}
+            \item Botão Travessia (BT=1 aciona operação de travessia)
+            \item Clock 1 Hz (Clk)
+        \end{itemize}
+    \item Funcionamento:
+        \begin{itemize}
+            \item O sinal só alterna para a passagem de pedestres mediante solicitação (BT=1);
+            \item A cada operação de travessia, o sinal permanece Verde para Veículos por pelo menos 30 segundos; 
+            \item O sinal permacece Verde para Pedestres por exatos 10 segundos; 
+            \item O sinal de alerta (Amarelo para Veículos e Vermelho Piscante para Pedestres) dura 5 segundos para ambos; 
+        \end{itemize}
+\end{itemize}
+\end{frame}
+
+\frame{{Máquina de Estados Finitos} \centering
+    \includegraphics[height=.95\textheight]{traffic_lights_fsm}
+}
+
+\frame{{Máquina de Estados Finitos} \centering
+    \includegraphics[height=.95\textheight]{pedestre}
+}
+
+
+\frame{{Tabela de Estados} \centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+    \hline
+    \multirow{2}{*}{Atual} & \multicolumn{5}{c}{Próximo} & \multicolumn{2}{|c|}{Saídas} \\
+    \cline{2-8}
+     & BT & t5s & t15s & t20s & t50s & $stA$ & $stB$ \\
+    \hline
+     $A$ & $B$ & - & - & - & - & \textcolor{red}{100} & \textcolor{green}{001} \\ 
+     $B$ & - & $C$ & - & - & - & \textcolor{red}{100} & \textcolor{yellow}{010} \\ 
+     $C$ & - & - & $D$ & - & - & \textcolor{green}{001} & \textcolor{red}{100} \\ 
+     $D$ & - & - & - & $A_1$ & - & \textcolor{yellow}{010} & \textcolor{red}{100} \\ 
+     \hline
+     $A_1$ & $A_2$ & - & - & - & $A$ & \textcolor{red}{100} & \textcolor{green}{001} \\ 
+     $A_2$ & - & - & - & - & $B$ & \textcolor{red}{100} & \textcolor{green}{001} \\ 
+    \hline
+\end{tabular}
+}
+
+\begin{frame}
+	\titlepage
+\end{frame} 
+
+\end{document}

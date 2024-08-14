@@ -1,0 +1,66 @@
+\include{00newheader}
+
+\subtitle{Máquinas de Estados Finitos: Exercícios} % 
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame} 
+
+\begin{frame}{Problema}
+\begin{itemize}
+ \item Entradas: 
+    \begin{itemize}
+     \item Botão 1º Andar (B1=1 chama elevador no 1º andar)
+     \item Botão Térreo (B0=1 chama elevador no andar térreo)
+     \item Sensor 1º Andar (S1=1 rente ao chão no 1º andar)
+     \item Sensor Térreo (S0=1 rente ao chão no andar térreo)
+     \item Porta 1º Andar (P1=1 porta no 1º andar fechada)
+     \item Porta Térreo (P0=1 porta no andar térreo fechada)
+    \end{itemize}
+ \item Saídas:
+    \begin{itemize}
+     \item Motor Sobe (MS=1 move elevador para cima)
+     \item Motor Desce (MD=1 move elevador para baixo)
+    \end{itemize}
+\end{itemize}
+\end{frame}
+    
+    
+\begin{frame}{Problema}
+\begin{itemize}
+ \item Funcionamento:
+    \begin{itemize}
+     \item O elevador só parte com as portas fechadas, mas a abertura não interrompe seu funcionamento; 
+     \item Os usuários são extremamente treinados, só chamam o elevador após o usuário anterior sair de dentro dele; 
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\frame{{Máquina de Estados Finitos} \centering
+    \includegraphics[height=.95\textheight]{elevator}
+}
+% https://bit.ly/2J5ZLkD
+
+\frame{{Tabela de Estados} \centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline
+    \multirow{2}{*}{Atual} & \multicolumn{4}{c}{Próximo} & \multicolumn{2}{|c|}{Saídas} \\
+    \cline{2-7}
+     & B1 & S1 & B0 & S0 & MS & MD \\
+    \hline
+     Baixo & Subindo & - & - & - & 0 & 0 \\ 
+     Subindo & - & Cima & - & - & 1 & 0 \\ 
+     Cima & - & - & Descendo & - & 0 & 0 \\ 
+     Descendo & - & - & - & Baixo & 0 & 1 \\ 
+     \hline
+\end{tabular}
+}
+
+\begin{frame}
+	\titlepage
+\end{frame} 
+
+\end{document}

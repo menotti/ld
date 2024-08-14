@@ -1,0 +1,168 @@
+\include{00newheader}
+
+\subtitle{Representação Numérica e Circuitos Aritméticos} % 
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Relembrando...}
+
+\begin{frame}{\insertsection}
+	\begin{itemize}
+        \item No sistema numérico binário, é usada a representação numérica posicional:
+        \begin{itemize}
+            \item $B = b_{n-1}b_{n-2} ... b_1 b_0$
+            \item $V(B) = b_{n-1} \times 2^{n-1} + b_{n-2} \times 2^{n-2} ... b_1 \times 2^1 + b_0 \times 2^0$
+            \item $= \sum\limits_{i=0}^{n-1} b_i \times 2^i$
+        \end{itemize}
+    \end{itemize}
+    \center \includegraphics[]{VerilogFig3_1_2}
+\end{frame}
+
+\section{Representações Octal e Hexadecimal}
+
+\begin{frame}{\insertsection}
+    \center \includegraphics[scale=.85]{VerilogTab3_1}
+\end{frame}
+
+\begin{frame}{\insertsection}
+    \center
+    $101011010111_{(2)}=5327_{(8)}$ \\
+    \includegraphics{Octal5327} \\
+    \vspace{2cm}
+    \pause
+    $010111011_{(2)}=273_{(8)}$ \\
+    \includegraphics{Octal273} \\
+\end{frame}
+
+\begin{frame}{\insertsection}
+    \center
+    $1010111100100101_{(2)}=AF25_{(16)}$ \\
+    \includegraphics{HexaAF25} \\
+    \pause
+    \vspace{2cm}
+    $001101101000_{(2)}=368_{(16)}=$ \\
+    \includegraphics{Hexa368}
+\end{frame}
+
+\section{Adição de números sem sinal}
+
+\begin{frame}{\insertsection}
+    \begin{columns}
+        \begin{column}{.6\textwidth}
+            \includegraphics[width=.74\textwidth]{VerilogFig3_1ab}
+        \end{column}
+        \begin{column}{.4\textwidth}
+            \includegraphics[width=.74\textwidth]{VerilogFig3_1c} \\
+            \includegraphics[width=.74\textwidth]{VerilogFig3_1d}
+        \end{column}
+    \end{columns}
+    \center \includegraphics[]{VerilogFig3_1}
+\end{frame}
+
+\begin{frame}{\insertsection}
+    \includegraphics[width=\textwidth]{VerilogFig3_2}
+\end{frame}
+
+\begin{frame}{\insertsection}
+    \begin{columns}
+        \begin{column}{.35\textwidth}
+            \includegraphics[width=.55\textwidth]{VerilogFig3_3a} \\
+            \includegraphics[width=.55\textwidth]{VerilogFig3_3b}
+        \end{column}
+        \begin{column}{.55\textwidth}
+            \includegraphics[width=\textwidth]{VerilogFig3_3c} \\
+            \includegraphics[]{VerilogFig3_3}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{\insertsection} \center
+    \includegraphics[width=.65\textwidth]{VerilogFig3_4}
+\end{frame}
+
+\begin{frame}{\insertsection} \center
+    \includegraphics[width=\textwidth]{VerilogFig3_5}
+\end{frame}
+
+\begin{frame}{\insertsection} \center
+    \includegraphics[width=.4\textwidth]{VerilogFig3_6a}
+    \includegraphics[width=.4\textwidth]{VerilogFig3_6b} \\
+    \includegraphics[width=.5\textwidth]{VerilogFig3_6}
+\end{frame}
+
+\section{Números com sinal}
+
+\begin{frame}{\insertsection} \center
+    \includegraphics[width=.5\textwidth]{VerilogFig3_7}
+\end{frame}
+
+\begin{frame}{\insertsection} 
+    \begin{itemize}
+        \item Sinal/Magnitude 
+        \begin{itemize}
+            \item $+5 = 0101$ e $-5 = 1101$
+        \end{itemize}
+        \pause
+        \item Complemento de 1 
+        \begin{itemize}
+            \item $K = (2^n - 1) - P$
+            \item $+5 = 0101$ e $-5 = 1010$
+        \end{itemize}
+        \pause
+        \item Complemento de 2
+        \begin{itemize}
+            \item $K = (2^n - P)$
+            \item $+5 = 0101$ e $-5 = 1011$
+            \item {\tt 0101~~~~~10110100~~~~~00000001~~~~~1000}
+            \item {\tt 101\textbf{1}~~~~~01001\textbf{100}~~~~~1111111\textbf{1}~~~~~\textbf{1000!}}
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{\insertsection} \center
+    \includegraphics[width=.45\textwidth]{VerilogTab3_2}
+\end{frame}
+
+\begin{frame}{\insertsection} \center
+    \includegraphics[width=.75\textwidth]{VerilogFig3_9}
+\end{frame}
+
+\begin{frame}{\insertsection} \center
+    \includegraphics[width=.43\textwidth]{VerilogFig3_10}
+\end{frame}
+
+\begin{frame}{\insertsection} \center
+    \includegraphics[width=.85\textwidth]{VerilogFig3_12}
+\end{frame}
+
+\begin{frame}{\insertsection} \center
+    \includegraphics[width=.7\textwidth]{VerilogFig3_13}
+\end{frame}
+
+\begin{frame}{\insertsection} \center
+    \includegraphics[width=.6\textwidth]{VerilogFig3_14}
+\end{frame}
+
+\begin{frame}{\insertsection} \center
+    \includegraphics[width=.55\textwidth]{VerilogFig3_15}
+\end{frame}
+
+\section{Bibliografia} %%%%%%%
+
+\begin{frame}{\insertsection} 
+	\begin{itemize}
+		\item \href{https://www.google.com.br/search?q=filetype\%3Apdf+Fundamentals+of+Digital+Logic+with+Verilog+Design+&oq=filetype\%3Apdf}{Brown, S. \& Vranesic, Z. - Fundamentals of Digital Logic with Verilog Design, 3rd Ed., Mc Graw Hill, 2009}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\titlepage
+\end{frame} 
+
+\end{document}

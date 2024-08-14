@@ -1,0 +1,62 @@
+\include{00newheader}
+
+\subtitle{Máquinas de Estados Finitos: Exercícios} % 
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame} 
+
+\frame{{Problema}
+    \centering 
+    \includegraphics[width=.2\textwidth]{green}
+    \includegraphics[width=.2\textwidth]{yellow}
+    \includegraphics[width=.2\textwidth]{red}
+}
+
+\frame{{Problema}
+    \centering 
+    Rua A\includegraphics[height=.45\textheight]{green}
+    \includegraphics[height=.45\textheight]{yellow}
+    \includegraphics[height=.45\textheight]{red}
+    \includegraphics[height=.45\textheight]{red} \\
+    Rua B\includegraphics[height=.45\textheight]{red}
+    \includegraphics[height=.45\textheight]{red} 
+    \includegraphics[height=.45\textheight]{green}
+    \includegraphics[height=.45\textheight]{yellow}
+}
+
+\frame{{Problema}
+    \centering 
+    \includegraphics[height=.45\textheight]{green}\hspace{3cm}
+    \includegraphics[height=.45\textheight]{yellow}
+    \includegraphics[height=.45\textheight]{red} \\
+}
+
+\frame{{Máquina de Estados Finitos} \centering
+    \includegraphics[height=.95\textheight]{traffic_lights_fsm} %TODO: aresta C/D tem h/l invertidos...
+}
+
+% \frame{{Tabela de Estados} \centering
+% \begin{tabular}{|c|c|c|c|c|c|c|c|}
+%     \hline
+%     \multirow{2}{*}{Atual} & \multicolumn{4}{c}{Próximo ($S_{16}/S_{18}$)} & \multicolumn{2}{|c|}{Saídas} \\
+%     \cline{2-7}
+%      & 0/0 & 0/1 & 1/0 & 1/1 & $A_1$ & $A_2$ \\
+%     \hline
+%      $A_1$ & $A_1$ & - & $B_1$ & - & 1 & 1 \\ 
+%      $A_2$ & $A_2$ & - & $B_2$ & - & 1 & 1 \\ 
+%      $B_1$ & $C_1$ & - & - & $C_2$ & 1 & 0 \\ 
+%      $B_2$ & $C_2$ & - & - & $C_1$ & 0 & 1 \\ 
+%      $C_1$ & - & - & $C_1$ & $B_2$ & 0 & 0 \\ 
+%      $C_2$ & - & - & $C_2$ & $B_1$ & 0 & 0 \\ 
+%     \hline
+% \end{tabular}
+% }
+
+\begin{frame}
+	\titlepage
+\end{frame} 
+
+\end{document}

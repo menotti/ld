@@ -1,0 +1,86 @@
+\include{00newheader}
+
+\subtitle{Circuitos Sequenciais: Máquinas de Estados Finitos} % 
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame} 
+
+\begin{frame}{Troca de Valores entre Registradores} \centering
+    \includegraphics[height=.95\textheight]{VerilogFig6_10} 
+\end{frame}
+
+\begin{frame}{Máquina de Estados Finitos} \centering
+    \includegraphics[height=.95\textheight]{VerilogFig6_11} 
+\end{frame}
+
+\begin{frame}{Tabela de Estados} \centering
+    \includegraphics[width=\textwidth]{VerilogFig6_12} 
+\end{frame}
+
+\begin{frame}{Tabela de Atribuição de Estados} 
+\begin{center}
+    \includegraphics[width=\textwidth]{VerilogFig6_13} \\
+\end{center}
+    $R1_{out} = R2_{in} = \overline{y}_1y_2$ \\
+    $R1_{in}  = R3_{out} = Done = y_1y_2$ \\
+    $R2_{out} = R3_{in} = y_1\overline{y}_2$ \\
+\end{frame}
+
+\begin{frame}{Expressões de próximo estado} \centering
+    \includegraphics[height=.95\textheight]{VerilogFig6_14} 
+\end{frame}
+
+\begin{frame}{Circuito resultante} \centering
+    \includegraphics[height=.95\textheight]{VerilogFig6_15} 
+\end{frame}
+
+\begin{frame}{Tabela de Atribuição de Estados (alternativa)} \centering
+    \includegraphics[width=\textwidth]{VerilogFig6_18} 
+\end{frame}
+
+\begin{frame}{Expressões de próximo estado} \centering
+    \includegraphics[height=.95\textheight]{VerilogFig6_19} 
+\end{frame}
+
+\begin{frame}{\textit{One-hot encoding}}
+\begin{center}
+    \includegraphics[width=.6\textwidth]{VerilogFig6_20} \\
+\end{center}
+    $Y_1 = \overline{w}$ \\
+    $Y_2 = wy_1$ \\
+    $Y_3 = w\overline{y}_1$ \\
+    $z = y3$ \\
+\end{frame}
+
+\begin{frame}{\textit{One-hot encoding}} 
+\begin{center}
+    \includegraphics[width=.9\textwidth]{VerilogFig6_21} \\
+\end{center}
+\begin{columns}
+    \column{.5\textwidth}
+    $Y_1 = \overline{w}y_1 + y_4$ \\
+    $Y_2 = wy_1$ \\
+    $Y_3 = y_2$ \\
+    $Y_4 = y_3$ \\
+    \column{.5\textwidth}
+    $R1_{out} = R2_{in} = y_3$ \\
+    $R1_{in}  = R3_{out} = Done = y_4$ \\
+    $R2_{out} = R3_{in} = y_2$ \\
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Bibliografia} 
+	\begin{itemize}
+		\item \href{https://www.google.com.br/search?q=filetype\%3Apdf+Fundamentals+of+Digital+Logic+with+Verilog+Design+&oq=filetype\%3Apdf}{Brown, S. \& Vranesic, Z. - Fundamentals of Digital Logic with Verilog Design, 3rd Ed., Mc Graw Hill, 2009}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\titlepage
+\end{frame} 
+
+\end{document}
