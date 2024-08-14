@@ -1,4 +1,4 @@
-# [Curso de Lógica Digital](slides/00_plano.pdf)
+# [Curso de Lógica Digital](slides/pdf/00_plano.pdf)
 
 ## OBJETIVOS GERAIS 
 
@@ -21,37 +21,37 @@ O que é computação paralela e como ela é usada; Conceitos e terminologia ass
 Horas | Tópico       | Semana | Slides
 :---: | :----------- | :----: | :----:
  ... | **Primeira Parte: Circuitos Combinacionais**		|     |
-3 | Introdução  						|  1a | [[01](slides/01_intro.pdf)]
-3 | Representação Digital da Informação				|  1a | [[02](slides/02_digital.pdf)]
-6 | Funções e Circuitos Lógicos 				|  2a | [[03](slides/03_funcirc.pdf)]
-3 | Algebra Booleana						|  3a | [[04](slides/04_boolean.pdf)]
-3 | Diagramas de Venn						|  3a | [[05](slides/05_venn.pdf)]
-3 | Síntese Lógica						|  4a | [[06](slides/06_sint.pdf)]
-3 | Exemplos de Projeto						|  4a | [[07](slides/07_exem.pdf)]
-3 | Introdução às Ferramentas CAD				|  5a | [[08](slides/08_cad.pdf)]
-3 | Introdução à Verilog					|  5a | [[09](slides/09_verilog.pdf)]
-2 | Mapas de Karnaugh (i)					|  6a | [[10](slides/10_karn.pdf)]
-2 | Mapas de Karnaugh (ii)					|  6a | [[11](slides/11_karn.pdf)]
-2 | Mapas de Karnaugh (iii)					|  6a | [[12](slides/12_karn.pdf)]
-3 | Representação Numérica e Circuitos Aritméticos		|  7a | [[13](slides/13_arit.pdf)]
-3 | Projeto de Circuitos Aritméticos com Verilog		|  7a | [[14](slides/14_verilog.pdf)]
-2 | Multiplexadores						|  8a | [[15](slides/15_mux.pdf)]
-2 | Conversores de Códigos					|  8a | [[16](slides/16_conv.pdf)]
-2 | Outros Circuitos Combinacionais				|  8a | [[17](slides/17_alu.pdf)]
+3 | Introdução  						|  1a | [[01](slides/pdf/01_intro.pdf)]
+3 | Representação Digital da Informação				|  1a | [[02](slides/pdf/02_digital.pdf)]
+6 | Funções e Circuitos Lógicos 				|  2a | [[03](slides/pdf/03_funcirc.pdf)]
+3 | Algebra Booleana						|  3a | [[04](slides/pdf/04_boolean.pdf)]
+3 | Diagramas de Venn						|  3a | [[05](slides/pdf/05_venn.pdf)]
+3 | Síntese Lógica						|  4a | [[06](slides/pdf/06_sint.pdf)]
+3 | Exemplos de Projeto						|  4a | [[07](slides/pdf/07_exem.pdf)]
+3 | Introdução às Ferramentas CAD				|  5a | [[08](slides/pdf/08_cad.pdf)]
+3 | Introdução à Verilog					|  5a | [[09](slides/pdf/09_verilog.pdf)]
+2 | Mapas de Karnaugh (i)					|  6a | [[10](slides/pdf/10_karn.pdf)]
+2 | Mapas de Karnaugh (ii)					|  6a | [[11](slides/pdf/11_karn.pdf)]
+2 | Mapas de Karnaugh (iii)					|  6a | [[12](slides/pdf/12_karn.pdf)]
+3 | Representação Numérica e Circuitos Aritméticos		|  7a | [[13](slides/pdf/13_arit.pdf)]
+3 | Projeto de Circuitos Aritméticos com Verilog		|  7a | [[14](slides/pdf/14_verilog.pdf)]
+2 | Multiplexadores						|  8a | [[15](slides/pdf/15_mux.pdf)]
+2 | Conversores de Códigos					|  8a | [[16](slides/pdf/16_conv.pdf)]
+2 | Outros Circuitos Combinacionais				|  8a | [[17](slides/pdf/17_alu.pdf)]
  ... | **Segunda Parte: Circuitos Sequenciais**			|     |
-2 | Latches e Flip-flops					|  9a | [[18](slides/18_latchff.pdf)]
-2 | Registradores						|  9a | [[19](slides/19_regs.pdf)]
-2 | Implementação em Verilog					|  9a | [[20](slides/20_verilog.pdf)]
-6 | Análise de Tempo						| 10a | [[21](slides/21_temp.pdf)]
-2 | Máquinas de Estados Finitos	(i)				| 11a | [[22](slides/22_fsm.pdf)]
-2 | Máquinas de Estados Finitos	(ii)				| 11a | [[23](slides/23_fsm.pdf)]
-1 | Máquinas de Estados Finitos	(iii)				| 11a | [[24](slides/24_fsm.pdf)]
-1 | Máquinas de Estados Finitos	(iv)				| 11a | [[25](slides/25_fsm.pdf)]
-3 | Minimização	de Máquinas de Estados Finitos			| 12a | [[26](slides/26_mini.pdf)]
-3 | Análise de Circuitos Sequenciais				| 12a | [[27](slides/27_analise.pdf)]
-6 | Estruturas de Barramentos					| 13a | [[28](slides/28_bar.pdf)]
-3 | Exercício: Aquecedores					| 14a | [[29](slides/29_aquece.pdf)]
-3 | Exercício: Semáforo						| 14a | [[30](slides/30_sinal.pdf)]
+2 | Latches e Flip-flops					|  9a | [[18](slides/pdf/18_latchff.pdf)]
+2 | Registradores						|  9a | [[19](slides/pdf/19_regs.pdf)]
+2 | Implementação em Verilog					|  9a | [[20](slides/pdf/20_verilog.pdf)]
+6 | Análise de Tempo						| 10a | [[21](slides/pdf/21_temp.pdf)]
+2 | Máquinas de Estados Finitos	(i)				| 11a | [[22](slides/pdf/22_fsm.pdf)]
+2 | Máquinas de Estados Finitos	(ii)				| 11a | [[23](slides/pdf/23_fsm.pdf)]
+1 | Máquinas de Estados Finitos	(iii)				| 11a | [[24](slides/pdf/24_fsm.pdf)]
+1 | Máquinas de Estados Finitos	(iv)				| 11a | [[25](slides/pdf/25_fsm.pdf)]
+3 | Minimização	de Máquinas de Estados Finitos			| 12a | [[26](slides/pdf/26_mini.pdf)]
+3 | Análise de Circuitos Sequenciais				| 12a | [[27](slides/pdf/27_analise.pdf)]
+6 | Estruturas de Barramentos					| 13a | [[28](slides/pdf/28_bar.pdf)]
+3 | Exercício: Aquecedores					| 14a | [[29](slides/pdf/29_aquece.pdf)]
+3 | Exercício: Semáforo						| 14a | [[30](slides/pdf/30_sinal.pdf)]
 6 | Avaliações							| 15a | 
 
 ## OBJETIVOS ESPECÍFICOS:
@@ -101,5 +101,5 @@ exercícios;
 - [HDLBits — Verilog Practice](https://hdlbits.01xz.net/wiki/Main_Page)
 - [FPGA designs with Verilog](https://verilogguide.readthedocs.io/en/latest/index.html)
 
-[^1]: Além do livro texto, cada aula/slides/tutorial pode ter referências complementares. 
+[^1]: Além do livro texto, cada aula/slide/tutorial pode ter referências complementares. 
 
