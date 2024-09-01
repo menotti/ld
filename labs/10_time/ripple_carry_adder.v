@@ -1,7 +1,7 @@
 `timescale 10ns / 10ps
 
 module ripple_carry_adder
-  #(parameter WIDTH = 8)
+  #(parameter WIDTH = 16)
 (
   input wire [WIDTH-1:0] i_add1,
   input wire [WIDTH-1:0] i_add2,
