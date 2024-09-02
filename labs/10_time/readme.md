@@ -20,5 +20,5 @@ O desempenho dos dois módulos foi testado e os tempos de execução foram regis
 ## Print do ModelSim Altera - módulos trabalhando com 32 bits
 ![ModelSim](print4.png)
 
-Aqui podemos observar, como exemplo, que utilizando 32 bits como parâmetro de largura, obtemos um atraso de 6,698 ns do módulo RCA em relação ao módulo CLA, o que corrobora os dados obtidos no gráfico acima
+Aqui podemos observar, como exemplo, que utilizando 32 bits como parâmetro de largura, obtemos um atraso de 6,698 ns do módulo RCA em relação ao módulo CLA, o que corrobora com os dados obtidos no gráfico acima.
 
