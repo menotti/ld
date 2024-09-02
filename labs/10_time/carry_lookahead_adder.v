@@ -1,6 +1,5 @@
 `timescale 10ns / 10ps
 
-
 module carry_lookahead_adder
   #(parameter WIDTH = 16)
 (
@@ -11,7 +10,6 @@ module carry_lookahead_adder
 
   wire [WIDTH-1:0] w_G, w_P, w_SUM;
   wire [WIDTH:0] w_C;
-
   
   genvar jj;
   generate
@@ -20,7 +18,6 @@ module carry_lookahead_adder
       assign w_P[jj] = i_add1[jj] | i_add2[jj];
     end
   endgenerate
-
   
   assign w_C[0] = 1'b0;
   generate
@@ -29,7 +26,6 @@ module carry_lookahead_adder
     end
   endgenerate
 
- 
   generate
     for (jj = 0; jj < WIDTH; jj = jj + 1) begin: fa
       full_adder full_adder_inst (
