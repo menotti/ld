@@ -15,17 +15,14 @@ Este projeto consiste na implementação e comparação de dois tipos de adiçã
 O desempenho dos dois módulos foi testado e os tempos de execução foram registrados. O gráfico abaixo ilustra a comparação dos tempos de execução para diferentes larguras de bits.
 
 ## Gráfico de Comparação de atraso - utilizando dados do ModelSim Altera
-![Gráfico de Atraso](grafico3.png)
+![Gráfico de Atraso](download1.png)
 
-## Print do ModelSim Altera - módulos trabalhando com 32 bits
-![ModelSim](print4.png)
+## Print do ModelSim Altera - módulos trabalhando com 32 bits (exemplo)
+![ModelSim](print32bits1.png)
 
-Aqui podemos observar, como exemplo, que utilizando 32 bits como parâmetro de largura, obtemos um atraso de 6,698 ns do módulo RCA em relação ao módulo CLA, o que corrobora com os dados obtidos no gráfico acima.
+Aqui podemos observar, como exemplo, que utilizando 32 bits como parâmetro de largura, obtemos um atraso de 1,022 ns do módulo RCA em relação ao módulo CLA, o que corrobora com os dados obtidos no gráfico acima.
 
-## Gráfico de Comparação de Lógica Utilizada - utilizando dados do Quartus II - Fitter
+## Gráfico de Comparação de Lógica Utilizada - utilizando dados do Quartus II - Fitter (Resource Utilization by Entity)
 ![Gráfico Lógica](grafico4.png)
 
-## Print do Quartus II (Fitter / Resource Utilization by Entity) - módulos trabalhando com 32 bits
-![Quartus](print5.png)
-
-Neste painel, podemos perceber que, enquanto o módulo RCA utiliza 23.5 ALMs para 32 bits, o módulo CLA utiliza 281, o que retifica os dados observados no gráfico acima.
+Podemos perceber que, enquanto o módulo RCA utiliza 23.5 ALMs para 32 bits, o módulo CLA utiliza 281, o que retifica os dados observados no gráfico acima.
