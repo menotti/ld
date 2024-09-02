@@ -22,3 +22,10 @@ O desempenho dos dois módulos foi testado e os tempos de execução foram regis
 
 Aqui podemos observar, como exemplo, que utilizando 32 bits como parâmetro de largura, obtemos um atraso de 6,698 ns do módulo RCA em relação ao módulo CLA, o que corrobora com os dados obtidos no gráfico acima.
 
+## Gráfico de Comparação de Lógica Utilizada - utilizando dados do Quartus II - Fitter
+![Gráfico Lógica](grafico4.png)
+
+## Print do Quartus II (Fitter / Resource Utilization by Entity) - módulos trabalhando com 32 bits
+![Quartus](print5.png)
+
+Neste painel, podemos perceber que, enquanto o módulo RCA utiliza 23.5 ALMs para 32 bits, o módulo CLA utiliza 281, o que retifica os dados observados no gráfico acima.
