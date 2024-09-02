@@ -14,5 +14,5 @@ Este projeto consiste na implementação e comparação de dois tipos de adiçã
 ## Resultados Esperados
 O desempenho dos dois módulos foi testado e os tempos de execução foram registrados. O gráfico abaixo ilustra a comparação dos tempos de execução para diferentes larguras de bits.
 
-## Gráfico de Desempenho
-![Gráfico de Desempenho](grafico2.png)
+## Gráfico de Comparação de atraso - utilizando dados do ModelSim Altera
+![Gráfico de Atraso](grafico3.png)
