@@ -17,6 +17,8 @@ O desempenho dos dois módulos foi testado e os tempos de execução foram regis
 ## Gráfico de Comparação de atraso - utilizando dados do ModelSim Altera
 ![Gráfico de Atraso](download1.png)
 
+Gráfico gerado através da ferramenta Matplotlib, em ambiente Python.
+
 ## Print do ModelSim Altera - módulos trabalhando com 32 bits (exemplo)
 ![ModelSim](print32bits1.png)
 
@@ -25,4 +27,6 @@ Aqui podemos observar, como exemplo, que utilizando 32 bits como parâmetro de l
 ## Gráfico de Comparação de Lógica Utilizada - utilizando dados do Quartus II - Fitter (Resource Utilization by Entity)
 ![Gráfico Lógica](grafico4.png)
 
-Podemos perceber que, enquanto o módulo RCA utiliza 23.5 ALMs para 32 bits, o módulo CLA utiliza 281, o que retifica os dados observados no gráfico acima.
+Gráfico gerado através da ferramenta Matplotlib, em ambiente Python.
+
+Podemos perceber que, enquanto o módulo RCA utiliza 23.5 ALMs para 32 bits, o módulo CLA utiliza 281, o que ratifica os dados observados no gráfico acima.
