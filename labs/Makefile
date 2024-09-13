@@ -5,12 +5,14 @@
 # Settings File (.qsf)
 ###################################################################
 
-PROJECT = Example-Project
+# QUARTUS_PATH = /opt/altera/13.0sp1/quartus/bin/
+
+PROJECT = project
 TOP_LEVEL_ENTITY = top
 ASSIGNMENT_FILES = $(PROJECT).qpf $(PROJECT).qsf
 
 ###################################################################
-# Part, Family, Boardfile DE1 or DE2
+# Part, Family, Boardfile
 FAMILY = "Cyclone V"
 PART = 5CEBA4F23C7
 BOARDFILE = ..\DE0_CV.qsf
@@ -23,7 +25,6 @@ SRCS = $(wildcard ./*.sv) \
 
 ###################################################################
 # Main Targets
-#
 # all: build everything
 # clean: remove output files and database
 # program: program your device with the compiled design
@@ -47,8 +48,6 @@ smart: smart.log
 #               If set then requires trailling slash.
 #               Commented out so it may be set from environment.
 ###################################################################
-
-# QUARTUS_PATH = /opt/altera/13.0sp1/quartus/bin/
 
 QUARTUS_MAP  = $(QUARTUS_PATH)quartus_map
 QUARTUS_FIT  = $(QUARTUS_PATH)quartus_fit
