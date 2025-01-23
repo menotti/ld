@@ -1,5 +1,8 @@
 # [Curso de Lógica Digital](slides/pdf/00_plano.pdf)
 
+## [Playlist das aulas no YouTube](https://www.youtube.com/playlist?list=PLhaFCmjMNuYZjAdJtC2WfDeHgR3daM9Tm)
+## [Curso de Verilog no HDLBits](https://www.youtube.com/playlist?list=PLhaFCmjMNuYZ542h5JCDsUDxsgZbWtFTI)
+
 ## OBJETIVOS GERAIS 
 
 Fornecer uma visão geral do tópico extenso e amplo da computação paralela, abrangendo os seus princípios básicos, as diversas formas de paralelismo,  as tecnologias e os dispositivos disponíveis atualmente para sua implementação nos diversos ambientes. 
@@ -88,8 +91,6 @@ Em todos os tópicos de conteúdo as seguintes estratégias de ensino serão ado
 - Simuladores disponíveis na Internet para solução de
 exercícios;
 - Materiais em PDF disponibilizados no AVA.
-
-## [Playlist das aulas no YouTube](https://www.youtube.com/playlist?list=PLhaFCmjMNuYZjAdJtC2WfDeHgR3daM9Tm)
 
 ## REFERÊNCIAS
 
