@@ -1,0 +1,6 @@
+[submodule "labs/getting-started"]
+	path = labs/getting-started
+	url = https://github.com/DC-UFSCar/getting-started
+[submodule "labs/basic-operators"]
+	path = labs/basic-operators
+	url = https://github.com/DC-UFSCar/basic-operators

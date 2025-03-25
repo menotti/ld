@@ -32,6 +32,9 @@ SRCS = $(wildcard ./*.sv) \
 
 all: smart.log $(PROJECT).asm.rpt $(PROJECT).sta.rpt 
 
+echo: 
+	echo $(TEST)
+
 clean:
 	del *.rpt *.chg smart.log *.htm *.eqn *.pin *.sof *.pof db incremental_db *.summary *.smsg *.jdi $(ASSIGNMENT_FILES)
 
