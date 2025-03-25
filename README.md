@@ -1,5 +1,8 @@
 # [Curso de Lógica Digital](slides/pdf/00_plano.pdf)
 
+## [Playlist das aulas no YouTube](https://www.youtube.com/playlist?list=PLhaFCmjMNuYZjAdJtC2WfDeHgR3daM9Tm)
+## [Curso de Verilog no HDLBits](https://www.youtube.com/playlist?list=PLhaFCmjMNuYZ542h5JCDsUDxsgZbWtFTI)
+
 ## OBJETIVOS GERAIS 
 
 Fornecer uma visão geral do tópico extenso e amplo da computação paralela, abrangendo os seus princípios básicos, as diversas formas de paralelismo,  as tecnologias e os dispositivos disponíveis atualmente para sua implementação nos diversos ambientes. 
@@ -89,8 +92,6 @@ Em todos os tópicos de conteúdo as seguintes estratégias de ensino serão ado
 exercícios;
 - Materiais em PDF disponibilizados no AVA.
 
-## [Playlist das aulas no YouTube](https://www.youtube.com/playlist?list=PLhaFCmjMNuYZjAdJtC2WfDeHgR3daM9Tm)
-
 ## REFERÊNCIAS
 
 [![Introdução à Lógica Digital com Verilog: Uma abordagem prática](https://m.media-amazon.com/images/I/91zMwnmVGFL._SY522_.jpg)](https://a.co/d/4j7AOQ5)
@@ -99,7 +100,7 @@ exercícios;
 - [Stephen Brown and Zvonko Vranesic, Fundamentals of Digital Logic with Verilog Design (3<sup>rd</sup> Edition), 2014](https://www.mheducation.com/highered/product/fundamentals-digital-logic-verilog-design-brown-vranesic/M9780073380544.html)
 - [Deepak Kumar Tala, World of ASIC, 2014](https://asic-world.com/)
 - [HDLBits — Verilog Practice](https://hdlbits.01xz.net/wiki/Main_Page)
-- [FPGA designs with Verilog](https://verilogguide.readthedocs.io/en/latest/index.html)
+- [Introdução ao Projeto de Circuitos Digitais utilizando FPGA](https://www.ic.unicamp.br/~rodolfo/Cursos/FPGA/)
 
 [^1]: Além do livro texto, cada aula/slide/tutorial pode ter referências complementares. 
 
