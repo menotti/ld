@@ -99,7 +99,7 @@ exercícios;
 - [Ricardo dos Santos Ferreira e Ricardo Menotti, Introdução à Lógica Digital com Verilog, 2023](https://a.co/d/4j7AOQ5)[^1]
 - [Stephen Brown and Zvonko Vranesic, Fundamentals of Digital Logic with Verilog Design (3<sup>rd</sup> Edition), 2014](https://www.mheducation.com/highered/product/fundamentals-digital-logic-verilog-design-brown-vranesic/M9780073380544.html)
 - [Deepak Kumar Tala, World of ASIC, 2014](https://asic-world.com/)
-- [HDLBits — Verilog Practice](https://hdlbits.01xz.net/wiki/Main_Page)
+- [HDLBits — Verilog Practice](hdlbits)
 - [Introdução ao Projeto de Circuitos Digitais utilizando FPGA](https://www.ic.unicamp.br/~rodolfo/Cursos/FPGA/)
 
 [^1]: Além do livro texto, cada aula/slide/tutorial pode ter referências complementares. 
