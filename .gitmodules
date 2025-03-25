@@ -1,6 +1,9 @@
 [submodule "labs/getting-started"]
-	path = labs/getting-started
+	path = labs/00_sim/getting-started
 	url = https://github.com/DC-UFSCar/getting-started
 [submodule "labs/basic-operators"]
-	path = labs/basic-operators
+	path = labs/00_sim/basic-operators
 	url = https://github.com/DC-UFSCar/basic-operators
+[submodule "labs/00_sim/vector-operators"]
+	path = labs/00_sim/vector-operators
+	url = https://github.com/DC-UFSCar/vector-operators
