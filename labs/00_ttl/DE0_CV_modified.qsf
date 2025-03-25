@@ -1,8 +1,0 @@
-# These are the pin assignments for the Altera DE0-CV
-
-set_global_assignment -name FAMILY "Cyclone V"
-set_global_assignment -name DEVICE 5CEBA4F23C7
-
-set_location_assignment PIN_N16 -to GPIO_0_D0 
-
-set_instance_assignment -name IO_STANDARD "1.2-V" -to GPIO_0_D0 
