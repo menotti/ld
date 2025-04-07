@@ -1,6 +1,8 @@
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/menotti/ld)
+
 # Test bench
 
-Nesta prática vamos usar o [Icarus Verilog](https://steveicarus.github.io/iverilog/) para fazer uma simulação e apresentar o seu resultado na console e no [GTKWave](https://gtkwave.sourceforge.net/).
+Nesta prática vamos usar o [Icarus Verilog](https://steveicarus.github.io/iverilog/) para fazer uma simulação e apresentar o seu resultado na console e no [GTKWave](https://gtkwave.sourceforge.net/) ou [WaveTrace](https://marketplace.visualstudio.com/items?itemName=wavetrace.wavetrace).
 
 ## Instalação
 
@@ -26,7 +28,7 @@ Ao digitar o caminho desejado, você pode usar a tecla `TAB` para completá-lo a
 
 ### Fazendo a implementação da função
 
-A implementação original da função apenas liga cada *switch* com o respectivo LED. Use a sintaxe do comentário para atribuir cada LED com sua respectiva função, conforme apresentado no [diagrama esquemático](Lab3.pdf).
+A implementação original da função apenas liga cada *switch* com o respectivo LED. 
 
 ```verilog
 module top(
@@ -37,6 +39,11 @@ module top(
 	//assign led[0] = ~sw[0];
 endmodule
 ```
+
+Use a sintaxe do comentário para atribuir cada LED com sua respectiva função, conforme apresentado no diagrama esquemático:
+
+![Diagrama do circuito](../../figs/leds.png "Diagrama do circuito")
+
 
 ### Inspecionando o *test bench* (`tb_top.v`)
 

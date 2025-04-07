@@ -3,6 +3,7 @@
 ## [Playlist das aulas no YouTube](https://www.youtube.com/playlist?list=PLhaFCmjMNuYZjAdJtC2WfDeHgR3daM9Tm)
 ## [Curso de Verilog no HDLBits](https://www.youtube.com/playlist?list=PLhaFCmjMNuYZ542h5JCDsUDxsgZbWtFTI)
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/menotti/ld)
 ## OBJETIVOS GERAIS 
 
 Fornecer uma visão geral do tópico extenso e amplo da computação paralela, abrangendo os seus princípios básicos, as diversas formas de paralelismo,  as tecnologias e os dispositivos disponíveis atualmente para sua implementação nos diversos ambientes. 
