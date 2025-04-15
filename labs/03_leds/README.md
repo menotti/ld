@@ -8,7 +8,7 @@ Nesta prática vamos usar o [Icarus Verilog](https://steveicarus.github.io/iveri
 
 Abra um terminal no Linux e digite o seguinte comando para instalar os pacotes necessários:
 
-`sudo apt install iverilog gtkwave`
+`sudo apt update && sudo apt install iverilog gtkwave`
 
 ## Comandos básicos 
 
