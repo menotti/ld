@@ -2,7 +2,7 @@ module tb_top;
   reg clk, x1, x2, x3, s0, s1;
   wire xfe, xff;
   reg [31:0] vectornum, errors;
-  reg [5:0] testvectors[100:0];
+  reg [5:0] testvectors [0:31];
   
   // Instantiate design under test
   top dut(x1, x2, x3, s0, s1, xfe, xff);
