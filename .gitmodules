@@ -1,12 +1,15 @@
-[submodule "labs/getting-started"]
-	path = labs/00_sim/getting-started
+[submodule "sim/getting-started"]
+	path = sim/getting-started
 	url = git@github.com:DC-UFSCar/getting-started.git
-[submodule "labs/basic-operators"]
-	path = labs/00_sim/basic-operators
+[submodule "sim/basic-operators"]
+	path = sim/basic-operators
 	url = git@github.com:DC-UFSCar/basic-operators.git
-[submodule "labs/00_sim/vector-operators"]
-	path = labs/00_sim/vector-operators
+[submodule "sim/vector-operators"]
+	path = sim/vector-operators
 	url = git@github.com:DC-UFSCar/vector-operators.git
-[submodule "labs/00_sim/structural-modules"]
-	path = labs/00_sim/structural-modules
+[submodule "sim/structural-modules"]
+	path = sim/structural-modules
 	url = git@github.com:DC-UFSCar/structural-modules.git
+[submodule "sim/structural-mux"]
+	path = sim/structural-mux
+	url = git@github.com:DC-UFSCar/structural-mux.git
