@@ -13,3 +13,6 @@
 [submodule "sim/structural-mux"]
 	path = sim/structural-mux
 	url = git@github.com:DC-UFSCar/structural-mux.git
+[submodule "sim/shannon-expansion"]
+	path = sim/shannon-expansion
+	url = git@github.com:DC-UFSCar/shannon-expansion.git
