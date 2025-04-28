@@ -3,4 +3,13 @@
   "build": {
     "dockerfile": "Dockerfile"
   }
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "wavetrace.wavetrace",
+        "mshr-h.VerilogHDL",
+        "yuyichao.digitaljs"
+      ]
+    }
+  }  
 }
