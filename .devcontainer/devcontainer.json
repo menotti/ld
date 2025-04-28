@@ -1,0 +1,6 @@
+{
+  "name": "Ubuntu Latest Custom",
+  "build": {
+    "dockerfile": "Dockerfile"
+  }
+}
