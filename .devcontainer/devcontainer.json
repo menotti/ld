@@ -1,8 +1,8 @@
 {
-  "name": "Ubuntu Latest Custom",
+  "name": "Ubuntu Latest Custom + Hardware Extensions",
   "build": {
     "dockerfile": "Dockerfile"
-  }
+  },
   "customizations": {
     "vscode": {
       "extensions": [
