@@ -1,8 +1,5 @@
 {
-  "name": "Ubuntu Latest Custom + Hardware Extensions",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
+  "postCreateCommand": "sudo apt update && sudo apt install -y iverilog",
   "customizations": {
     "vscode": {
       "extensions": [
