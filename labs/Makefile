@@ -15,7 +15,7 @@ ASSIGNMENT_FILES = $(PROJECT).qpf $(PROJECT).qsf
 # Part, Family, Boardfile
 FAMILY = "Cyclone V"
 PART = 5CEBA4F23C7
-BOARDFILE = ..\DE0_CV.qsf
+BOARDFILE = ../DE0_CV.qsf
 ###################################################################
 
 ###################################################################
@@ -32,11 +32,8 @@ SRCS = $(wildcard ./*.sv) \
 
 all: smart.log $(PROJECT).asm.rpt $(PROJECT).sta.rpt 
 
-echo: 
-	echo $(TEST)
-
 clean:
-	del *.rpt *.chg smart.log *.htm *.eqn *.pin *.sof *.pof db incremental_db *.summary *.smsg *.jdi $(ASSIGNMENT_FILES)
+	rm -rf *.sld *.txt *.rpt *.chg smart.log *.htm *.eqn *.pin *.sof *.pof db incremental_db *.summary *.smsg *.jdi $(ASSIGNMENT_FILES)
 
 map: smart.log $(PROJECT).map.rpt
 fit: smart.log $(PROJECT).fit.rpt
@@ -52,6 +49,8 @@ smart: smart.log
 #               Commented out so it may be set from environment.
 ###################################################################
 
+QUARTUS_PATH = /opt/intelFPGA/23.1std/quartus/bin/
+
 QUARTUS_MAP  = $(QUARTUS_PATH)quartus_map
 QUARTUS_FIT  = $(QUARTUS_PATH)quartus_fit
 QUARTUS_ASM  = $(QUARTUS_PATH)quartus_asm
@@ -60,7 +59,7 @@ QUARTUS_SH   = $(QUARTUS_PATH)quartus_sh
 QUARTUS_PGM  = $(QUARTUS_PATH)quartus_pgm
 
 ifeq ($(shell uname -m),x86_64)
-QUARTUS_ARGS = --64bit
+	QUARTUS_ARGS = --64bit
 endif
 
 MAP_ARGS = $(QUARTUS_ARGS) --read_settings_files=on $(addprefix --source=,$(SRCS))
@@ -68,7 +67,7 @@ FIT_ARGS = $(QUARTUS_ARGS) --part=$(PART) --read_settings_files=on
 ASM_ARGS = $(QUARTUS_ARGS)
 STA_ARGS = $(QUARTUS_ARGS)
 SH_ARGS  = $(QUARTUS_ARGS)
-PGM_ARGS = $(QUARTUS_ARGS) --no_banner --mode=jtag 
+PGM_ARGS = $(QUARTUS_ARGS) --no_banner --mode=jtag
 
 ###################################################################
 # Target implementations
@@ -100,7 +99,7 @@ smart.log: $(ASSIGNMENT_FILES)
 
 $(ASSIGNMENT_FILES):
 	$(QUARTUS_SH) $(SH_ARGS) --prepare -f $(FAMILY) -t $(TOP_LEVEL_ENTITY) $(PROJECT)
-	$(TYPE) $(BOARDFILE) >> $(PROJECT).qsf
+	-cat $(BOARDFILE) >> $(PROJECT).qsf
 map.chg:
 	$(STAMP) map.chg
 fit.chg:
