@@ -103,5 +103,14 @@ exercícios;
 - [HDLBits — Verilog Practice](hdlbits)
 - [Introdução ao Projeto de Circuitos Digitais utilizando FPGA](https://www.ic.unicamp.br/~rodolfo/Cursos/FPGA/)
 
+## AGRADECIMENTOS
+
+Agradeço aos colegas de departamento Artino, Inoue, Luciano, Maurício e Kato, que dividiram a oferta da disciplina comigo, fazendo diversas contribuições para o curso. Agradeço também ao Prof. Ricardo Ferreira[^2] pela coautoria no livro, ao Prof. Rodolfo Azevedo[^3] pela ajuda com o GitHub Classroom e ao Prof. Lucas Wanner[^4] pela ajuda com o Auto Multiple Choice. 
+
 [^1]: Além do livro texto, cada aula/slide/tutorial pode ter referências complementares. 
+[^2]: https://www2.dpi.ufv.br/prof-ricardo-dos-santos-ferreira/
+[^3]: https://www.ic.unicamp.br/~rodolfo/
+[^4]: https://www.ic.unicamp.br/~lucas/
+
+
 
