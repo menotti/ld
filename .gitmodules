@@ -16,3 +16,6 @@
 [submodule "sim/shannon-expansion"]
 	path = sim/shannon-expansion
 	url = git@github.com:DC-UFSCar/shannon-expansion.git
+[submodule "sim/maxterms-minterms"]
+	path = sim/maxterms-minterms
+	url = git@github.com:DC-UFSCar/maxterms-minterms.git
