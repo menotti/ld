@@ -19,3 +19,6 @@
 [submodule "sim/maxterms-minterms"]
 	path = sim/maxterms-minterms
 	url = git@github.com:DC-UFSCar/maxterms-minterms.git
+[submodule "sim/karnaugh-maps"]
+	path = sim/karnaugh-maps
+	url = git@github.com:DC-UFSCar/karnaugh-maps.git
