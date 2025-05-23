@@ -1,24 +1,24 @@
 [submodule "sim/getting-started"]
-	path = sim/getting-started
+	path = sim/00-getting-started
 	url = git@github.com:DC-UFSCar/getting-started.git
 [submodule "sim/basic-operators"]
-	path = sim/basic-operators
+	path = sim/01-basic-operators
 	url = git@github.com:DC-UFSCar/basic-operators.git
 [submodule "sim/vector-operators"]
-	path = sim/vector-operators
+	path = sim/02-vector-operators
 	url = git@github.com:DC-UFSCar/vector-operators.git
 [submodule "sim/structural-modules"]
-	path = sim/structural-modules
+	path = sim/03-structural-modules
 	url = git@github.com:DC-UFSCar/structural-modules.git
 [submodule "sim/structural-mux"]
-	path = sim/structural-mux
+	path = sim/04-structural-mux
 	url = git@github.com:DC-UFSCar/structural-mux.git
 [submodule "sim/shannon-expansion"]
-	path = sim/shannon-expansion
+	path = sim/05-shannon-expansion
 	url = git@github.com:DC-UFSCar/shannon-expansion.git
 [submodule "sim/maxterms-minterms"]
-	path = sim/maxterms-minterms
+	path = sim/06-maxterms-minterms
 	url = git@github.com:DC-UFSCar/maxterms-minterms.git
 [submodule "sim/karnaugh-maps"]
-	path = sim/karnaugh-maps
+	path = sim/07-karnaugh-maps
 	url = git@github.com:DC-UFSCar/karnaugh-maps.git
