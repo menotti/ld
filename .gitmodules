@@ -22,3 +22,6 @@
 [submodule "sim/karnaugh-maps"]
 	path = sim/07-karnaugh-maps
 	url = git@github.com:DC-UFSCar/karnaugh-maps.git
+[submodule "sim/08-adder-subtractor"]
+	path = sim/08-adder-subtractor
+	url = git@github.com:DC-UFSCar/adder-subtractor.git
