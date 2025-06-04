@@ -4,14 +4,14 @@ module tb_sum4bits;
   wire [3:0] s;
   wire ov;
   reg [31:0] vectornum, errors;
-  reg [19:0] testvectors[42:0];
+  reg [19:0] testvectors[0:9];
   
   // Instantiate design under test
   addsum4bits dut(op, x, y, s, ov);
 
   // generate clock 
   always begin
-    clk = 1; #50; clk = 0; #50;
+    clk = 0; #50; clk = 1; #50;
   end
   
   initial begin
@@ -47,7 +47,7 @@ module tb_sum4bits;
     vectornum = vectornum + 1;
     if (testvectors[vectornum][0] === 1'bx) begin
       $display("%d tests completed with %d errors", vectornum, errors);
-      $stop;
+      #10 $finish;
     end
   end  
 

@@ -1,7 +1,7 @@
 module sum4bits (
   input cin,
-  input [3:0] x, y,
-  output [3:0] s,
+  input signed [3:0] x, y,
+  output signed [3:0] s,
   output ov);
   
   wire C[3:0];

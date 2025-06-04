@@ -1,6 +1,6 @@
 module dec7seg (
     input  [3:0] hex,
-    output reg [6:0] segs);
+    output reg [6:0] segs); // some boards use active low, so you may need to invert the output
     always @(hex)        // gfedcba
       case (hex)         // 6543210
         4'b0000 : segs = 7'b0111111; // 0
