@@ -25,3 +25,12 @@
 [submodule "sim/08-adder-subtractor"]
 	path = sim/08-adder-subtractor
 	url = git@github.com:DC-UFSCar/adder-subtractor.git
+[submodule "sim/09-priority-encoder"]
+	path = sim/09-priority-encoder
+	url = git@github.com:DC-UFSCar/priority-encoder
+[submodule "sim/10-remote-lab"]
+	path = sim/10-remote-lab
+	url = git@github.com:DC-UFSCar/remote-lab.git
+[submodule "sim/11-behavioral-brown"]
+	path = sim/11-behavioral-brown
+	url = git@github.com:DC-UFSCar/behavioral-brown.git
