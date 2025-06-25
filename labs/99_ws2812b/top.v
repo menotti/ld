@@ -2,7 +2,7 @@ module top (
     input CLOCK_50,
     output GPIO);
 
-    localparam NLEDS  = 78; // Número de LEDs WS2812B
+    localparam NLEDS  = 64;
     localparam NBITS  = NLEDS * 24;
 
     // Temporizações WS2812B @ 50 MHz
@@ -15,8 +15,6 @@ module top (
     reg gpio_out;   // registrador intermediário
     assign GPIO = gpio_out;
 
-    reg [NBITS-1:0] leds_data = {NLEDS{24'b11111111_11111111_11111111}};
-
     reg [11:0] clk_cnt = 0;
     reg [10:0] bit_idx = 0;
 
@@ -28,7 +26,21 @@ module top (
 
     reg [11:0] reset_cnt = 0;
     reg [11:0] phase_len = 0;
-    reg [11:0] bit_total = NBITS;
+
+    reg current_bit = 0;
+
+    wire [5:0] led_idx = bit_idx / 24;
+    wire [4:0] color_bit_idx = 23 - (bit_idx % 24);
+
+    // Mapa de cores (7 cores principais: RGB, CMY, White)
+    wire [23:0] color =
+        (led_idx % 7 == 0) ? 24'h00FF00 : // Red
+        (led_idx % 7 == 1) ? 24'hFF0000 : // Green
+        (led_idx % 7 == 2) ? 24'h0000FF : // Blue
+        (led_idx % 7 == 3) ? 24'hFF00FF : // Cyan
+        (led_idx % 7 == 4) ? 24'h00FFFF : // Magenta
+        (led_idx % 7 == 5) ? 24'hFFFF00 : // Yellow
+                            24'hFFFFFF ;  // White
 
     always @(posedge CLOCK_50) begin
         case (state)
@@ -40,10 +52,8 @@ module top (
             end
 
             HIGH: begin
-                if (leds_data[NBITS - 1 - bit_idx])
-                    phase_len <= T1H;
-                else
-                    phase_len <= T0H;
+                current_bit <= color[color_bit_idx];
+                phase_len <= current_bit ? T1H : T0H;
 
                 gpio_out <= 1;
 
@@ -56,17 +66,14 @@ module top (
             end
 
             LOW: begin
-                if (leds_data[NBITS - 1 - bit_idx])
-                    phase_len <= T1L;
-                else
-                    phase_len <= T0L;
+                phase_len <= current_bit ? T1L : T0L;
 
                 gpio_out <= 0;
 
                 if (clk_cnt >= phase_len) begin
                     clk_cnt <= 0;
                     bit_idx <= bit_idx + 1;
-                    if (bit_idx == bit_total - 1) begin
+                    if (bit_idx == NBITS - 1) begin
                         state <= RESET;
                         reset_cnt <= 0;
                     end else begin
