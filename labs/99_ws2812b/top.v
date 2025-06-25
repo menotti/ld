@@ -32,23 +32,36 @@ module top (
     wire [5:0] led_idx = bit_idx / 24;
     wire [4:0] color_bit_idx = 23 - (bit_idx % 24);
 
-wire [7:0] intensity = led_idx * 4;  // 0–252
+    reg [25:0] frame_div = 0;         // 26 bits para contar até 50_000_000
+    reg [5:0] frame_counter = 0;      // controla deslocamento (até 64 LEDs)
 
-wire [2:0] bits = led_idx % 8;
+    always @(posedge CLOCK_50) begin
+        if (frame_div == 26'd49_999_999) begin
+            frame_div <= 0;
+            frame_counter <= frame_counter + 1;
+        end else 
+            frame_div <= frame_div + 1;
+    end
 
-wire [7:0] base_R = {8{bits[2]}};
-wire [7:0] base_G = {8{bits[1]}};
-wire [7:0] base_B = {8{bits[0]}};
+    wire [5:0] shifted_idx = led_idx + frame_counter; // rotação
 
-wire [15:0] prod_R = base_R * intensity;
-wire [15:0] prod_G = base_G * intensity;
-wire [15:0] prod_B = base_B * intensity;
+    wire [7:0] intensity = (shifted_idx * 4);  // variação visual junto com rotação
 
-wire [7:0] R = prod_R[15:8];
-wire [7:0] G = prod_G[15:8];
-wire [7:0] B = prod_B[15:8];
+    wire [2:0] bits = shifted_idx % 8;
 
-wire [23:0] color = {G, R, B}; // GRB para WS2812B
+    wire [7:0] base_R = {8{bits[2]}};
+    wire [7:0] base_G = {8{bits[1]}};
+    wire [7:0] base_B = {8{bits[0]}};
+
+    wire [15:0] prod_R = base_R * intensity;
+    wire [15:0] prod_G = base_G * intensity;
+    wire [15:0] prod_B = base_B * intensity;
+
+    wire [7:0] R = prod_R[15:8];
+    wire [7:0] G = prod_G[15:8];
+    wire [7:0] B = prod_B[15:8];
+
+    wire [23:0] color = {G, R, B}; // GRB para WS2812B
 
     always @(posedge CLOCK_50) begin
         case (state)
