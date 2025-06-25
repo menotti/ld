@@ -32,15 +32,23 @@ module top (
     wire [5:0] led_idx = bit_idx / 24;
     wire [4:0] color_bit_idx = 23 - (bit_idx % 24);
 
-    // Mapa de cores (7 cores principais: RGB, CMY, White)
-    wire [23:0] color =
-        (led_idx % 7 == 0) ? 24'h00FF00 : // Red
-        (led_idx % 7 == 1) ? 24'hFF0000 : // Green
-        (led_idx % 7 == 2) ? 24'h0000FF : // Blue
-        (led_idx % 7 == 3) ? 24'hFF00FF : // Cyan
-        (led_idx % 7 == 4) ? 24'h00FFFF : // Magenta
-        (led_idx % 7 == 5) ? 24'hFFFF00 : // Yellow
-                            24'hFFFFFF ;  // White
+wire [7:0] intensity = led_idx * 4;  // 0–252
+
+wire [2:0] bits = led_idx % 8;
+
+wire [7:0] base_R = {8{bits[2]}};
+wire [7:0] base_G = {8{bits[1]}};
+wire [7:0] base_B = {8{bits[0]}};
+
+wire [15:0] prod_R = base_R * intensity;
+wire [15:0] prod_G = base_G * intensity;
+wire [15:0] prod_B = base_B * intensity;
+
+wire [7:0] R = prod_R[15:8];
+wire [7:0] G = prod_G[15:8];
+wire [7:0] B = prod_B[15:8];
+
+wire [23:0] color = {G, R, B}; // GRB para WS2812B
 
     always @(posedge CLOCK_50) begin
         case (state)
