@@ -6,7 +6,7 @@ module TB();
   reg [2:0] s;
   reg [1:0] pb;
 
-  reg [15:0] testvectors[100:0];
+  reg [15:0] testvectors [0:7];
   
   integer errors, i;
 
@@ -43,7 +43,7 @@ module TB();
        i = i + 1;
        if (testvectors[i][0] === 1'bx) begin
          $display("%d tests completed with %d errors", i, errors);
-         $stop;
+         $finish;
        end
      end
    end
