@@ -34,3 +34,6 @@
 [submodule "sim/11-behavioral-brown"]
 	path = sim/11-behavioral-brown
 	url = git@github.com:DC-UFSCar/behavioral-brown.git
+[submodule "sim/12-moore-mealy"]
+	path = sim/12-moore-mealy
+	url = git@github.com:DC-UFSCar/moore-mealy.git
