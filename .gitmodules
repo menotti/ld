@@ -37,3 +37,6 @@
 [submodule "sim/12-moore-mealy"]
 	path = sim/12-moore-mealy
 	url = git@github.com:DC-UFSCar/moore-mealy.git
+[submodule "sim/13-fibonacci-bus"]
+	path = sim/13-fibonacci-bus
+	url = git@github.com:DC-UFSCar/fibonacci-bus.git
