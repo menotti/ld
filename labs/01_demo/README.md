@@ -30,7 +30,7 @@ module top(
 endmodule
 ```
 
-Ele apenas atribui a saida `LEDR`, que aciona os 💡LEDs da placa, usando a entrada `SW`, relativa aos 🖲️*switch buttons*. Como ambos são vetores (veremos o que isso significa mais adiante), cada botão irá acionar um LED independentemente. Os nomes escolhidos para as entradas (`input`) e saídas (`output`) são importantes, pois no arquivo de pinos da placa encontramos o seguinte:
+Ele apenas atribui a saida `LEDR`, que aciona os 💡LEDs da placa, usando a entrada `SW`, relativa aos *switch buttons*. Como ambos são vetores (veremos o que isso significa mais adiante), cada botão irá acionar um LED independentemente. Os nomes escolhidos para as entradas (`input`) e saídas (`output`) são importantes, pois no arquivo de pinos da placa encontramos o seguinte:
 
 ```
 set_location_assignment PIN_AA2 -to LEDR[0]
@@ -85,7 +85,7 @@ cd C:\Users\aluno\Downloads\ld\labs\01_demo
 
     - DE0-CV
 
-        - [Manual do usuário](DE0_CV_User_Manual)
+        - [Manual do usuário](DE0_CV_User_Manual.pdf)
         - [Arquivo de pinos](DE0_CV.qsf)
 
 - AMD / Xilinx®
