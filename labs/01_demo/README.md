@@ -85,8 +85,8 @@ cd C:\Users\aluno\Downloads\ld\labs\01_demo
 
     - DE0-CV
 
-        - [Manual do usuário](DE0_CV_User_Manual.pdf)
-        - [Arquivo de pinos](DE0_CV.qsf)
+        - [Manual do usuário](../DE0_CV_User_Manual.pdf)
+        - [Arquivo de pinos](../DE0_CV.qsf)
 
 - AMD / Xilinx®
 
@@ -97,5 +97,5 @@ cd C:\Users\aluno\Downloads\ld\labs\01_demo
     - Zybo Z7-20
 
         - [Manual de referência](https://digilent.com/reference/programmable-logic/zybo-z7/reference-manual)
-        - [Arquivo de pinos](DE0_CV.qsf)
+        - [Arquivo de pinos](../ZyboZ7.xdc)
 
