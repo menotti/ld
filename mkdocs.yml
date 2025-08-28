@@ -1,0 +1,65 @@
+site_name: Lógica Digital
+site_description: Curso de Lógica Digital com Verilog
+site_url: https://menotti.pro.br/ld/
+site_author: Ricardo Menotti
+repo_url: https://github.com/menotti/ld
+repo_name: menotti/ld
+
+theme:
+  language: pt-BR
+  icon:
+    logo: fontawesome/solid/microchip
+  font:
+    text: Merriweather Sans
+    code: Roboto Mono
+  name: material
+  palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: dark blue
+      accent: deep purple
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: cyan
+      accent: deep orange
+  features:
+    - navigation.footer
+    - content.footnote.tooltips    
+
+extra:
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    - icon: simple/youtube
+      link: https://www.youtube.com/@Prof_Menotti?sub_confirmation=1
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/menotti
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/prof_menotti
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/ricardomenotti/
+
+markdown_extensions:
+  - footnotes
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+copyright: |
+  &copy; 2025 <a href="https://menotti.pro.br"  target="_blank" rel="noopener">Ricardo Menotti</a>
