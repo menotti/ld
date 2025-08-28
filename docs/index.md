@@ -6,11 +6,11 @@
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/menotti/ld)
 ## OBJETIVOS GERAIS 
 
-Fornecer uma visão geral do tópico extenso e amplo da computação paralela, abrangendo os seus princípios básicos, as diversas formas de paralelismo,  as tecnologias e os dispositivos disponíveis atualmente para sua implementação nos diversos ambientes. 
+Ao final da disciplina o estudante deve ser capaz de projetar e analisar circuitos digitais combinatórios e sequenciais e executar sua implementação usando circuitos integrados e linguagem de descrição de hardware. 
 
 ## EMENTA 
 
-O que é computação paralela e como ela é usada; Conceitos e terminologia associados à computação paralela; Arquiteturas paralelas e modelos de programação; Projeto e execução de programas paralelos; Exemplos de como paralelizar programas seriais.
+Conceitos fundamentais de eletrônica digital. Representação digital da informação. Álgebra booleana. Tabelas verdade e portas lógicas. Expressões lógicas e formas canônicas. Estratégias de minimização de circuitos. Elementos de memória. Máquinas de estado (Mealy e Moore). Circuitos funcionais típicos (combinacionais e sequenciais).
 
 ## CARGA HORÁRIA
 
