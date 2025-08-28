@@ -1,9 +1,11 @@
 # [Curso de Lógica Digital](slides/pdf/00_plano.pdf)
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/menotti/ld)
+
 ## [Playlist das aulas no YouTube](https://www.youtube.com/playlist?list=PLhaFCmjMNuYZjAdJtC2WfDeHgR3daM9Tm)
+
 ## [Curso de Verilog no HDLBits](https://www.youtube.com/playlist?list=PLhaFCmjMNuYZ542h5JCDsUDxsgZbWtFTI)
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/menotti/ld)
 ## OBJETIVOS GERAIS 
 
 Ao final da disciplina o estudante deve ser capaz de projetar e analisar circuitos digitais combinatórios e sequenciais e executar sua implementação usando circuitos integrados e linguagem de descrição de hardware. 
