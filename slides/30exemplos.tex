@@ -1,0 +1,48 @@
+\include{00newheader}
+
+\subtitle{Máquinas de Estados Finitos: Exercícios} % 
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame} 
+
+\frame{{Problema}
+    
+Um sistema possui dois sensores de temperatura s16 e s18 e dois aquecedores a1 e a2. Seu funcionamento deve ser o seguinte: 
+\begin{itemize}
+    \item Quando a temperatura estiver abaixo de 16 graus (s16 = 0) os dois aquecedores devem ser ligados.
+    \item Quando a temperatura estiver entre 16 e 18 graus (s16 = 1 & s18 = 0) um dos aquecedores deve ser ligado alternadamente a cada entrada nesta faixa de temperatura.
+    \item Quando a temperatura estiver acima de 18 graus (s18 = 1) os aquecedores dever ser desligados.
+\end{itemize}
+}
+
+\frame{{Máquina de Estados Finitos}
+    \centering 
+    \includegraphics[width=.5\textwidth]{heater}
+}
+
+\frame{{Tabela de Estados} \centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline
+    \multirow{2}{*}{Atual} & \multicolumn{4}{c}{Próximo ($S_{16}/S_{18}$)} & \multicolumn{2}{|c|}{Saídas} \\
+    \cline{2-7}
+     & 0/0 & 0/1 & 1/0 & 1/1 & $A_1$ & $A_2$ \\
+    \hline
+     $A_1$ & $A_1$ & - & $B_1$ & - & 1 & 1 \\ 
+     $A_2$ & $A_2$ & - & $B_2$ & - & 1 & 1 \\ 
+     $B_1$ & $A_2$ & - & - & $C_1$ & 1 & 0 \\ 
+     $B_2$ & $A_1$ & - & - & $C_2$ & 0 & 1 \\ 
+     $C_1$ & - & - & $B_2$ & $C_1$ & 0 & 0 \\ 
+     $C_2$ & - & - & $B_1$ & $C_2$ & 0 & 0 \\ 
+    \hline
+\end{tabular}
+}
+
+
+\begin{frame}
+	\titlepage
+\end{frame} 
+
+\end{document}

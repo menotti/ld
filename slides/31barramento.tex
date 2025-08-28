@@ -1,0 +1,51 @@
+\include{00newheader}
+
+\subtitle{Estruturas de Barramentos} % 
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame} 
+
+\begin{frame}{Transmission gates} \centering
+    \begin{columns}
+        \column{.5\textwidth}
+            \includegraphics[width=\textwidth]{bufs}
+        \column{.5\textwidth}
+            \footnotesize
+            \begin{tabular}{ll}
+                \hline
+                \textbf{Gate} & \textbf{Descrição}\\
+                \hline
+                \hline
+                not & N-output inverter.\\
+                buf & N-output buffer.\\
+                bufif0 & Tri-state buffer, Low en.\\
+                bufif1 & Tri-state buffer, High en.\\
+                notif0 & Tri-state inverter, Low en.\\
+                notif1 & Tri-state inverter, High en.\\
+                \hline
+            \end{tabular}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Buffer tristate} \centering
+    \includegraphics[width=\textwidth]{VerilogFig7_1}
+\end{frame}
+
+\begin{frame}{Acesso ao barramento compartilhado} \centering
+    \includegraphics[height=.95\textheight]{VerilogFig7_2}
+\end{frame}
+
+\begin{frame}{Bibliografia} 
+	\begin{itemize}
+		\item \href{https://www.google.com.br/search?q=filetype\%3Apdf+Fundamentals+of+Digital+Logic+with+Verilog+Design+&oq=filetype\%3Apdf}{Brown, S. \& Vranesic, Z. - Fundamentals of Digital Logic with Verilog Design, 3rd Ed., Mc Graw Hill, 2009}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\titlepage
+\end{frame} 
+
+\end{document}

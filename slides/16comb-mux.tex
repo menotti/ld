@@ -1,0 +1,125 @@
+\include{00newheader}
+
+\subtitle{Circuitos Combinacionais: Multiplexadores} % 
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame} 
+
+\begin{frame}{Multiplexador 2-para-1}   \centering
+    \includegraphics[width=.7\textwidth]{VerilogFig2_33}
+\end{frame}
+
+\begin{frame}[fragile]{figure4.23.v}
+    \verilog{figure4.23}
+\end{frame} 
+
+\begin{frame}[fragile]{figure4.24.v}
+    \verilog{figure4.24}
+\end{frame} 
+
+\begin{frame}[fragile]{figure4.26.v}
+    \verilog{figure4.26}
+\end{frame} 
+
+\begin{frame}{Multiplexador 4-para-1}   
+    \begin{columns}
+        \begin{column}{0.60\textwidth}
+        \centering
+        \includegraphics[scale=.75,trim={0 0 0 4cm},clip]{VerilogFig4_2}
+        \end{column}
+        \begin{column}{0.40\textwidth}
+        \includegraphics[scale=.85,trim={0 8cm 4cm 0},clip]{VerilogFig4_2} \\
+        \includegraphics[scale=.85,trim={4cm 8cm 0 0},clip]{VerilogFig4_2}
+        \end{column}    
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Multiplexador 4-para-1}   
+    \centering
+    \includegraphics[width=.7\textwidth]{VerilogFig4_3}
+\end{frame}
+
+\begin{frame}[fragile]{figure4.25.v}
+    \verilog{figure4.25}
+\end{frame} 
+
+\begin{frame}[fragile]{figure4.27.v}
+    \verilog{figure4.27}
+\end{frame} 
+
+\begin{frame}[fragile]{figure4.28.v}
+    \verilog{figure4.28}
+\end{frame} 
+
+\begin{frame}[fragile]{figure4.30.v}
+    \verilog{figure4.30}
+\end{frame} 
+
+
+\begin{frame}{Multiplexador 16-para-1}   \centering
+    \includegraphics[width=.35\textwidth]{VerilogFig4_4}
+\end{frame}
+
+\begin{frame}[fragile]{figure4.29.v}
+    \verilog{figure4.29}
+\end{frame} 
+
+\begin{frame}[fragile]{figure4.42.v}
+    \verilogf{figure4.42}{\tiny}
+\end{frame} 
+
+\begin{frame}[fragile]{figure4.43.v}
+    \verilogf{figure4.43}{\tiny}
+\end{frame} 
+
+\begin{frame}{Crossbar 2x2}   \centering
+    \includegraphics[width=.45\textwidth]{VerilogFig4_5}
+\end{frame}
+
+\section{Síntese de funções lógicas usando multiplexadores}
+
+\begin{frame}{\insertsection}
+    Teorema de Shannon: \\
+    $f(w_1,w_2,...,w_n)=\overline{w}_1.f(0,w_2,...,w_n)+w_1.f(1,w_2,...,w_n)$
+\end{frame}
+
+\begin{frame}{\insertsection}   \centering
+    \includegraphics[scale=.85,trim={0 4cm 2cm 0},clip]{VerilogFig4_6}
+    \includegraphics[scale=.85,trim={0 1cm 0 8cm},clip]{VerilogFig4_6} \\
+    \includegraphics[scale=.85,trim={0 0 0 11.5cm},clip]{VerilogFig4_6} 
+\end{frame}
+
+\begin{frame}{\insertsection}   \centering
+    \includegraphics[scale=.85,trim={0 5.5cm 4cm 0},clip]{VerilogFig4_7}
+    \includegraphics[scale=.85,trim={1cm 1cm 4cm 6cm},clip]{VerilogFig4_7} \\
+    \includegraphics[scale=.85,trim={0 0 0 10cm},clip]{VerilogFig4_7} 
+\end{frame}
+
+\begin{frame}{\insertsection}   \centering
+    \includegraphics[width=.9\textwidth]{VerilogFig4_8}
+\end{frame}
+
+\begin{frame}{\insertsection}   \centering
+    \includegraphics[width=.8\textwidth]{VerilogFig4_9}
+\end{frame}
+
+\begin{frame}{\insertsection}   \centering
+    \includegraphics[width=.5\textwidth]{VerilogFig4_10}
+\end{frame}
+
+\section{Bibliografia} %%%%%%%
+
+\begin{frame}{\insertsection} 
+	\begin{itemize}
+		\item \href{https://www.google.com.br/search?q=filetype\%3Apdf+Fundamentals+of+Digital+Logic+with+Verilog+Design+&oq=filetype\%3Apdf}{Brown, S. \& Vranesic, Z. - Fundamentals of Digital Logic with Verilog Design, 3rd Ed., Mc Graw Hill, 2009}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\titlepage
+\end{frame} 
+
+\end{document}
