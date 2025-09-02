@@ -1,0 +1,94 @@
+\include{00newheader}
+
+\subtitle{Circuitos Sequenciais: Análise de Tempo} % 
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame} 
+
+\begin{frame}{Temporização de um flip-flop} \centering
+    \includegraphics[height=.95\textheight]{VerilogFig5_14} 
+\end{frame}
+
+\begin{frame}{Análise de tempo \textit{(timing analysis)}}   \centering
+	\begin{columns}
+        \column{0.4\textwidth}
+            \includegraphics[width=\textwidth]{VerilogFig5_66} 
+        \column{0.6\textwidth}
+            \begin{itemize}
+                \item $t_{su} =$ 0,6 ns
+                \item $t_h =$ 0,4 ns
+                \item 0,8 ns $\leq t_{cQ} \leq$ 1,0 ns
+                \pause
+                \item $T_{min} = 1/F_{max}$ 
+                \item $T_{min} = t_{cQ} + t_{NOT} + t_{su}$ 
+                \item $T_{min} = $ 1,0 $+$ 1,1 $+$ 0,6 $=$ 2,7 ns 
+                \item $F_{max} = $ 1$/$2,7 ns $=$ 370,37 MHz
+                \pause
+                \item $t_{cQ} + t_{NOT} = $ 0,8 $+$ 1,1 $=$ \\ 1,9 ns $> t_h =$ 0,4 ns
+            \end{itemize}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Análise de tempo \textit{(timing analysis)}}   \centering
+	\begin{columns}
+        \column{0.45\textwidth}
+            \vspace{0.25cm}
+            \includegraphics[height=.95\textheight]{VerilogFig5_67} 
+        \column{0.55\textwidth}
+            \begin{itemize}
+                \item $t_{su} =$ 0,6 ns
+                \item $t_h =$ 0,4 ns
+                \item 0,8 ns $\leq t_{cQ} \leq$ 1,0 ns
+                \pause
+                \item $T_{min} = 1/F_{max}$ 
+                \item $T_{min} = t_{cQ} + 3(t_{AND}) + t_{XOR} + t_{su}$ 
+                \item $T_{min} = $ 1,0 $+$ 3(1,2) $+$ 1,2 $+$ 0,6 $=$ 6,4 ns 
+                \item $F_{max} = $ 1$/$6,4 ns $=$ 156,25 MHz
+                \pause
+                \item $t_{cQ} + t_{XOR} = $ 0,8 $+$ 1,2 $=$ \\ 2,0 ns $> t_h =$ 0,4 ns
+            \end{itemize}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Conceito geral de \textit{clock skew}} \centering
+    \includegraphics[height=.95\textheight]{VerilogFig5_68} 
+\end{frame}
+
+\begin{frame}{Relógio ``distorcido'' \textit{(clock skew)}}   \centering
+	\begin{columns}
+        \column{0.38\textwidth}
+            \vspace{0.5cm}
+            \includegraphics[height=.85\textheight]{VerilogFig5_67} 
+        \column{0.63\textwidth}
+            \begin{itemize}
+                \item $t_{skew} =$ 1,5 ns
+                \item $T_{min} = t_{cQ} + 3(t_{AND}) + t_{XOR} + t_{su} - t_{skew}$ 
+                \item $T_{min} = $ 1,0 $+$ 3(1,2) $+$ 1,2 $+$ 0,6 $-$ 1,5 $=$ 4,9 ns 
+                \item $T_{min} = t_{cQ} + 2(t_{AND}) + t_{XOR} + t_{su}$ 
+                \item $T_{min} = $ 1,0 $+$ 2(1,2) $+$ 1,2 $+$ 0,6 $=$ 5,2 ns 
+                \item $F_{max} = $ 1$/$5,2 ns $=$ 192,31 MHz
+                \pause
+                \item $t_{cQ} + t_{AND} + t_{XOR} = $ 0,8 $+$ 1,2 $+$ 1,2 $=$ 3,2 ns $> t_h + t_{skew} = $ 0,4 $+$ 1,5 $=$ 1,9 ns
+                \item $t_{skew} \geq $ 2,8 ns
+            \end{itemize}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Exemplo de análise de tempo} \centering
+    \includegraphics[height=.95\textheight]{VerilogFig5_70} 
+\end{frame}
+
+\begin{frame}{Bibliografia} 
+	\begin{itemize}
+		\item \href{https://www.google.com.br/search?q=filetype\%3Apdf+Fundamentals+of+Digital+Logic+with+Verilog+Design+&oq=filetype\%3Apdf}{Brown, S. \& Vranesic, Z. - Fundamentals of Digital Logic with Verilog Design, 3rd Ed., Mc Graw Hill, 2009}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\titlepage
+\end{frame} 
+
+\end{document}

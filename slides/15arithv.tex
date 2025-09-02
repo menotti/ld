@@ -1,0 +1,127 @@
+\include{00newheader}
+
+\subtitle{Projeto de Circuitos Aritméticos com Verilog} % 
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame} 
+
+\begin{frame}[fragile]{figure3.18.v}
+    \verilog{figure3.18}
+\end{frame} 
+
+\begin{frame}[fragile]{figure3.19.v}
+    \verilog{figure3.19}
+\end{frame} 
+
+\begin{frame}[fragile]{figure3.20.v}
+    \verilog{figure3.20}
+\end{frame} 
+
+\begin{frame}[fragile]{figure3.21.v}
+    \verilog{figure3.21}
+\end{frame} 
+
+\begin{frame}[fragile]{figure3.22.v}
+    \verilogf{figure3.22}{\scriptsize}
+\end{frame} 
+
+\begin{frame}[fragile]{figure3.23.v}
+    \verilog{figure3.23}
+\end{frame} 
+
+\begin{frame}[fragile]{figure3.24.v}
+    \verilogf{figure3.24}{\scriptsize}
+\end{frame} 
+
+\begin{frame}[fragile]{figure3.25.v}
+    \verilogf{figure3.25}{\scriptsize}
+\end{frame} 
+
+\begin{frame}[fragile]{figure3.26.v}
+    \verilog{figure3.26}
+\end{frame} 
+
+\begin{frame}[fragile]{figure3.27.v}
+    \verilog{figure3.27}
+\end{frame} 
+
+\begin{frame}[fragile]{figure3.28.v}
+    \verilog{figure3.28}
+\end{frame} 
+
+\begin{frame}[fragile]{figure3.29.v}
+    \verilog{figure3.29}
+\end{frame} 
+
+\begin{frame}[fragile]{figure3.30.v}
+    \verilog{figure3.30}
+\end{frame} 
+
+\begin{frame}[fragile]{figure3.31.v}
+    \verilog{figure3.31}
+\end{frame} 
+
+\begin{frame}[fragile]{figure3.32.v}
+    \verilog{figure3.32}
+\end{frame} 
+
+\begin{frame}[fragile]{figure3.33.v}
+    \verilogf{figure3.33}{\scriptsize}
+\end{frame} 
+
+\begin{frame}{Representação de Números em Verilog}
+    Seguem o formato <\#bits>'<base><valor>
+    \begin{itemize}
+        \item {\tt 12'b100010101001}
+        \item {\tt 12'o4251}
+        \item {\tt 12'h8A9}
+        \item {\tt 12'd2217}
+    \end{itemize}
+\end{frame}
+
+\setcounter{framenumber}{\value{framenumber}-1}
+
+\begin{frame}{Representação de Números em Verilog}
+    Seguem o formato <\#bits>'<base><valor>
+    \begin{itemize}
+        \item {\tt 'b100010101001}
+        \item {\tt 'o4251}
+        \item {\tt 'h8A9}
+        \item {\tt 2217}
+    \end{itemize}
+\end{frame}
+
+\setcounter{framenumber}{\value{framenumber}-1}
+
+\begin{frame}{Representação de Números em Verilog}
+    Seguem o formato <\#bits>'<base><valor>
+    \begin{itemize}
+        \item {\tt 'b1000\_1010\_1001}
+        \item {\tt 'o4251}
+        \item {\tt 'h8A9}
+        \item {\tt 2217}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Concatenação e Extensão de Sinal}
+    Supondo que A tem 8 bits e B tem 4 bits: \\
+    \smallskip \\
+    \center {\tt S = A + \{4\{B[3]\}, B\};}
+\end{frame}
+
+\section{Bibliografia} %%%%%%%
+
+\begin{frame}{\insertsection} 
+	\begin{itemize}
+		\item \href{https://www.google.com.br/search?q=filetype\%3Apdf+Fundamentals+of+Digital+Logic+with+Verilog+Design+&oq=filetype\%3Apdf}{Brown, S. \& Vranesic, Z. - Fundamentals of Digital Logic with Verilog Design, 3rd Ed., Mc Graw Hill, 2009}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\titlepage
+\end{frame} 
+
+\end{document}

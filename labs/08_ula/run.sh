@@ -1,0 +1,1 @@
+iverilog *.sv && ./a.out
