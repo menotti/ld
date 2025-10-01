@@ -11,9 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          submodules: true
-          ssh-key: ${{ secrets.VLAB_PRIVATE_KEY }}
       - name: Configure Git Credentials
         run: |
           git config user.name github-actions[bot]
