@@ -1,0 +1,72 @@
+\include{00newheader}
+
+\subtitle{Análise de Circuitos Sequenciais} % 
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame} 
+
+\begin{frame}{Introdução} \centering
+\textit{Além de saber como projetar um circuito sequencial, temos que saber como analisar o comportamento de um circuito existente, o que é muito mais simples.}
+
+\vspace{1cm}
+
+\textit{Para analisar um circuito, bastar seguir na ordem inversa os mesmos passos usados na síntese. As saídas dos flip-flops representam o estado atual e suas entradas o próximo estado. A partir destas informações podemos reconstruir as tabelas de estados e posteriormente a máquina.}
+\end{frame}
+
+\begin{frame}{Um circuito com 2 flip-flops} \centering
+    \begin{columns}
+        \column{.8\textwidth}
+            \includegraphics[width=1.2\textwidth]{VerilogFig6_75}
+        \column{.3\textwidth}
+            \vfill
+            \pause
+            $Y_1 = w\overline{y}_1 + wy_2$ \\ 
+            $Y_2 = wy_1 + wy_2$ \\
+            $z = y_1y_2$ \\
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Tabelas de estados} \centering
+    \begin{columns}
+        \column{.6\textwidth}
+            \includegraphics[height=.95\textheight]{VerilogFig6_76}
+        \pause
+        \column{.3\textwidth}
+            \includegraphics[height=.95\textheight]{abcd}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Definição formal}
+    $M = (W, Z, S, \varphi, \lambda)$ \\
+    onde 
+    \begin{itemize}
+        \item $W$, $Z$, e $S$ são conjuntos finitos não vazios de entradas, saídas e estados respectivamente;
+        \item $\varphi$ é a função de transição de estado, tal que $S(t+1) = \varphi[W(t), S(t)]$
+        \item $\lambda$ é a função de saída, tal que:
+        \begin{itemize}
+            \item $\lambda(t) = \lambda[S(t)]$ para o modelo de Moore; e
+            \item $\lambda(t) = \lambda[W (t), S(t)]$ para o modelo de Mealy.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Bibliografia} 
+	\begin{itemize}
+		\item \href{https://www.google.com.br/search?q=filetype\%3Apdf+Fundamentals+of+Digital+Logic+with+Verilog+Design+&oq=filetype\%3Apdf}{Brown, S. \& Vranesic, Z. - Fundamentals of Digital Logic with Verilog Design, 3rd Ed., Mc Graw Hill, 2009}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\titlepage
+\end{frame} 
+
+\end{document}
+
+
+
+
+

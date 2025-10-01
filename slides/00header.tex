@@ -1,0 +1,110 @@
+\documentclass[hyperref={pdfpagelabels=false},aspectratio=34,14pt]{beamer}
+\usepackage{lmodern} %TODO: descobrir o que mudou as fontes dos slides (comparar com os primeiros)
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usefonttheme[onlymath]{serif}
+\usepackage[brazil]{babel}
+\usepackage[outputdir=..]{minted}
+\usepackage{xcolor}
+\usepackage{soul} % strikethrough
+\usepackage{advdate}
+\usepackage{graphicx}
+\usepackage[ampersand]{easylist}
+\usepackage{multirow}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning}
+\usetikzlibrary{circuits.logic.US}
+\usetikzlibrary{matrix,calc}
+\usepackage{karnaugh-map}
+
+\usepackage{pgfpages}
+\setbeamertemplate{note page}{\pagecolor{yellow!5}\insertnote}\usepackage{palatino}
+\newcommand{\yes}{edge node [above] {yes}}
+\newcommand{\no}{edge  node [left]  {no}}
+\newcommand{\textttb}[1]{\textcolor{blue}{\ttfamily #1}}
+
+% \setmathfont{Latin Modern Math}[version=lm]
+
+\graphicspath{{../figs/}}
+
+\definecolor{bgc}{rgb}{0.95,0.9,0.95}
+\definecolor{links}{HTML}{2A7F7F}
+\hypersetup{colorlinks,linkcolor=,urlcolor=links}
+
+\newminted{verilog}{fontsize=\scriptsize, 
+		   linenos,
+		   numbersep=8pt,
+           bgcolor=bgc,
+           tabsize=4,
+		   framesep=3mm} 
+%		   frame=lines,
+
+\newcommand{\verilog}[1]{\verilogf{#1}{\footnotesize}
+
+\newcommand{\verilogf}[2]{\inputminted[fontsize=#2, 
+		   linenos,
+		   tabsize=2,
+		   numbersep=4pt,
+           bgcolor=bgc,
+		   framesep=3mm]{verilog}{../codes/#1.v}
+}
+
+\newminted{nasm}{fontsize=\scriptsize, 
+		   linenos,
+		   numbersep=8pt,
+           bgcolor=bgc,
+		   framesep=3mm} 
+
+% \author[shortname]{\scriptsize Prof. Edilson Kato \and Prof. Maurício Figueiredo \and Prof. Ricardo Menotti\newline
+% \href{mailto:kato@ufscar.br}{kato@ufscar.br} \and    \href{mailto:mauricio@ufscar.br}{mauricio@ufscar.br} \and
+% \href{mailto:menotti@ufscar.br}{menotti@ufscar.br}}
+
+\newcommand{\newauthor}[2]{
+  \parbox{0.40\textwidth}{
+    \texorpdfstring
+      {
+        \centering
+        \footnotesize #1 \newline
+        {\scriptsize{\urlstyle{same}\href{mailto:#2}{#2}\urlstyle{tt}}}
+      }
+      {#1} \newline
+  }
+}
+
+\author{
+%   \newauthor{Prof. Edilson Kato}{kato@ufscar.br}
+% \and
+  \newauthor{Prof. Ricardo Menotti}{menotti@ufscar.br}
+\and 
+  \newauthor{Prof. Maurício Figueiredo}{mauricio@ufscar.br}
+% \and
+%   \newauthor{Prof. Roberto Inoue}{rsinoue@ufscar.br}
+}
+
+\institute{\href{http://www.dc.ufscar.br/}{Departamento de Computação} \\
+           \href{http://www.ufscar.br/}{Universidade Federal de São Carlos}} 
+\titlegraphic{
+  \makebox[.85\paperwidth]{
+    \includegraphics[height=1cm]{figs/LogoDC} 
+    \hfill 
+    \includegraphics[height=1cm]{figs/LogoUfscar}}}
+\date{Atualizado em: \today} 
+% \date{\DayAfter[+1]} % +/-
+
+%\logo{\includegraphics[height=1cm]{figs/LogoUfscar}\includegraphics[height=1cm]{figs/LogoDC}}
+
+\title{Lógica Digital (1001351)}
+
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>{Roteiro}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+
+\addtobeamertemplate{navigation symbols}{}{%
+    \usebeamerfont{footline}%
+    \usebeamercolor[fg]{footline}%
+    \hspace{1em}%
+    \raisebox{1.2pt}[0pt][0pt]{\insertframenumber/\inserttotalframenumber}
+}
