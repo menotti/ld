@@ -1,0 +1,20 @@
+Usando arquivo de testes:                                                                                                                       values2.tv
+WARNING: tb_top.v:29: $readmemh(values2.tv): Not enough words in the file for the requested range [0:96].
+=== Início dos testes ===
+OK no teste  0: a=00000001 b=00000001 sub=1 => 00000000
+OK no teste  1: a=00000001 b=ffffffff sub=1 => 00000002
+OK no teste  2: a=ffffffff b=00000001 sub=1 => fffffffe
+OK no teste  3: a=7fffffff b=00000001 sub=1 => 7ffffffe
+OK no teste  4: a=7fffffff b=ffffffff sub=1 => 80000000
+OK no teste  5: a=80000000 b=00000001 sub=1 => 7fffffff
+OK no teste  6: a=80000000 b=ffffffff sub=1 => 80000001
+OK no teste  7: a=00000000 b=00000001 sub=1 => ffffffff
+OK no teste  8: a=00000000 b=ffffffff sub=1 => 00000001
+OK no teste  9: a=ffffffff b=ffffffff sub=1 => 00000000
+OK no teste 10: a=7fffffff b=7fffffff sub=1 => 00000000
+OK no teste 11: a=80000000 b=80000000 sub=1 => 00000000
+OK no teste 12: a=0000ffff b=00000001 sub=1 => 0000fffe
+OK no teste 13: a=00000000 b=00000000 sub=1 => 00000000
+OK no teste 14: a=7fffffff b=80000000 sub=1 => ffffffff
+OK no teste 15: a=80000000 b=7fffffff sub=1 => 00000001
+=== Fim dos testes (16 casos) ===

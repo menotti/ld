@@ -1,0 +1,224 @@
+$date
+	Tue Jul 15 11:28:27 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module t_fibo $end
+$var wire 32 ! bus [31:0] $end
+$var reg 1 " clk $end
+$var reg 32 # fibo [31:0] $end
+$var reg 1 $ rst $end
+$var integer 32 % errors [31:0] $end
+$var integer 32 & vectornum [31:0] $end
+$scope module dut $end
+$var wire 1 " clk $end
+$var wire 32 ' fibonacci_bus [31:0] $end
+$var wire 1 $ rst $end
+$var reg 1 ( control $end
+$scope module a $end
+$var wire 32 ) bus [31:0] $end
+$var wire 1 " clk $end
+$var wire 1 ( enable $end
+$var wire 1 $ rst $end
+$var integer 32 * value [31:0] $end
+$upscope $end
+$scope module b $end
+$var wire 32 + bus [31:0] $end
+$var wire 1 " clk $end
+$var wire 1 , enable $end
+$var wire 1 $ rst $end
+$var integer 32 - value [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx -
+1,
+bx +
+bx *
+bx )
+0(
+bx '
+b0 &
+b0 %
+1$
+bx #
+0"
+bx !
+$end
+#50
+b1 !
+b1 '
+b1 )
+b1 +
+b1 *
+b1 -
+b0xxxxxxxx #
+b1 &
+1"
+#100
+b1 !
+b1 '
+b1 )
+b1 +
+0,
+1(
+0"
+0$
+#150
+b1 #
+b10 &
+b10 *
+1"
+#200
+b10 !
+b10 '
+b10 )
+b10 +
+1,
+0(
+0"
+#250
+b11 -
+b10 #
+b11 &
+1"
+#300
+b11 !
+b11 '
+b11 )
+b11 +
+0,
+1(
+0"
+#350
+b11 #
+b100 &
+b101 *
+1"
+#400
+b101 !
+b101 '
+b101 )
+b101 +
+1,
+0(
+0"
+#450
+b1000 -
+b101 #
+b101 &
+1"
+#500
+b1000 !
+b1000 '
+b1000 )
+b1000 +
+0,
+1(
+0"
+#550
+b1000 #
+b110 &
+b1101 *
+1"
+#600
+b1101 !
+b1101 '
+b1101 )
+b1101 +
+1,
+0(
+0"
+#650
+b10101 -
+b1101 #
+b111 &
+1"
+#700
+b10101 !
+b10101 '
+b10101 )
+b10101 +
+0,
+1(
+0"
+#750
+b10101 #
+b1000 &
+b100010 *
+1"
+#800
+b100010 !
+b100010 '
+b100010 )
+b100010 +
+1,
+0(
+0"
+#850
+b110111 -
+b100010 #
+b1001 &
+1"
+#900
+b110111 !
+b110111 '
+b110111 )
+b110111 +
+0,
+1(
+0"
+#950
+b110111 #
+b1010 &
+b1011001 *
+1"
+#1000
+b1011001 !
+b1011001 '
+b1011001 )
+b1011001 +
+1,
+0(
+0"
+#1050
+b10010000 -
+b1011001 #
+b1011 &
+1"
+#1100
+b10010000 !
+b10010000 '
+b10010000 )
+b10010000 +
+0,
+1(
+0"
+#1150
+b10010000 #
+b1100 &
+b11101001 *
+1"
+#1200
+b11101001 !
+b11101001 '
+b11101001 )
+b11101001 +
+1,
+0(
+0"
+#1250
+b101111001 -
+b11101001 #
+b1101 &
+1"

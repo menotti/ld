@@ -1,0 +1,91 @@
+\include{00newheader}
+
+\subtitle{Mapas de Karnaugh} % 
+
+% https://tex.stackexchange.com/questions/140567/drawing-karnaughs-maps-in-latex
+% http://www.texample.net/tikz/examples/karnaugh-diagram/
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Mapas de Karnaugh}
+
+\frame{     \centering
+    \frametitle{\insertsection}
+\begin{tikzpicture}
+\tikzstyle{foo} = [-latex, cyan, ultra thick, rounded corners]
+\tikzstyle{bar} = [-latex, magenta, ultra thick, rounded corners]
+\node[anchor=south west,inner sep=0](image) at (0,0){\includegraphics{VerilogFig2_48}};
+% \draw[step=0.25cm,gray,very thin] (0,0) grid (9,6);
+% \draw[step=1cm,black,very thin] (0,0) grid (9,6);
+\onslide<2,4->{
+\draw[bar] (3.7, 4.5)   to (4.3, 4.5); 
+\draw[bar] (3.7, 3.6)   to (4.3, 3.6); 
+\draw[bar] (3.7, 2.75)  to (4.3, 2.75); 
+\draw[bar] (3.7, 1.875) to (4.3, 1.875); 
+\node[bar](x3) at (5,5.125) {$=\overline{x}_3$};
+}
+\onslide<3,4->{
+\draw[foo] (3, 2.75)  to (4.3, 2.75); 
+\draw[foo] (3, 2.3)  to (4.3, 2.3); 
+\node[foo](x1x2) at (6,5.125) {$+x_1\overline{x}_2$};
+}
+\onslide<4->{
+\draw[bar, blue] (3.7, 2.75)  to (4.3, 2.75); 
+}
+\onslide<5-> {
+    \node[anchor=south west,inner sep=0](a) at (7,4){\includegraphics{VerilogFig2_48a}};
+    \node[anchor=south west,inner sep=0](b) at (7,2){\includegraphics{VerilogFig2_48b}};
+    \draw[bar] (x3) to[bend left] (a);
+    \draw[foo] (x1x2) to[bend right] (b);
+}
+\end{tikzpicture}%
+}
+
+\begin{frame}{\insertsection: duas variáveis} \centering
+    \includegraphics[width=.6\textwidth]{VerilogFig2_49}
+    \includegraphics[width=.3\textwidth]{VerilogFig2_49a}
+\end{frame}
+
+\begin{frame}{\insertsection: duas variáveis} \centering
+    \includegraphics[width=.6\textwidth]{VerilogFig2_50}
+\end{frame}
+
+\begin{frame}{\insertsection: três variáveis} \centering
+    \includegraphics[width=.8\textwidth]{VerilogFig2_51}
+\end{frame}
+
+\begin{frame}{\insertsection: três variáveis} \centering
+    \includegraphics[width=.65\textwidth]{VerilogFig2_52}
+\end{frame}
+
+\begin{frame}{\insertsection: quatro variáveis} \centering
+    \includegraphics[width=.7\textwidth]{VerilogFig2_53}
+\end{frame}
+
+\begin{frame}{\insertsection: quatro variáveis} \centering
+    \includegraphics[width=.55\textwidth]{VerilogFig2_54}
+\end{frame}
+
+\begin{frame}{\insertsection: cinco variáveis} \centering
+    \includegraphics[width=.8\textwidth]{VerilogFig2_55}
+\end{frame}
+
+\section{Bibliografia} %%%%%%%
+
+\begin{frame}{\insertsection} 
+	\begin{itemize}
+		\item \href{https://www.google.com.br/search?q=filetype\%3Apdf+Fundamentals+of+Digital+Logic+with+Verilog+Design+&oq=filetype\%3Apdf}{Brown, S. \& Vranesic, Z. - Fundamentals of Digital Logic with Verilog Design, 3rd Ed., Mc Graw Hill, 2009}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\titlepage
+\end{frame} 
+
+\end{document}

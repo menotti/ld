@@ -1,0 +1,40 @@
+module top(
+    input  CLOCK_27, // 27 MHz clock input
+    output [5:0] LEDO, // Orange LEDs
+    output [7:0] LEDG, // Green LEDs
+    output WS2812,     // RGB LED (board)
+    output WS2812B,    // REG LED (12 LEDs ring)
+    output SERVO);     // PWM signal for servo motor
+
+    almost_top at (
+        .CLOCK_27(CLOCK_27),
+        .LEDO(LEDO),
+        .LEDG(LEDG),
+        .WS2812(WS2812),
+        .WS2812B(WS2812B),
+        .SERVO(USER)
+    );
+
+    SERVO_safety ss (
+        .CLOCK_27(CLOCK_27),
+        .PWM(MAX)
+    );
+    assign SERVO = MAX & USER; // Combine servo safety with user control
+endmodule
+
+module SERVO_safety(
+    input CLOCK_27,
+    output PWM
+);
+    localparam FREQUENCY = 50;
+    localparam PERIOD = 27_000_000 / FREQUENCY;
+    localparam PULSE_WIDTH_MAX = PERIOD * 0.10;
+
+    reg [31:0] counter = 0;
+    reg [31:0] pulse_width = PULSE_WIDTH_MAX;
+
+    always @(posedge CLOCK_27)
+        counter <= (counter < PERIOD - 1) ? counter + 1 : 0;
+
+    assign PWM = (counter < pulse_width);
+endmodule

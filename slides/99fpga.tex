@@ -1,0 +1,103 @@
+\include{00header}
+
+\title{Introdução à Computação Reconfigurável}
+
+\subtitle{Laboratório de Organização e Arquitetura de Computadores I}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame} 
+
+\begin{frame}{Conteúdo}
+	\tableofcontents
+\end{frame}
+
+\section{Introdução} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Métodos de computação \cite{menotti2010.phd}} 
+	\center	\includegraphics[width=\textwidth]{gap}
+\end{frame}
+
+\begin{frame}{Mercado de lógica digital \cite{hamblen}} 
+	\center	\includegraphics[height=.75\textheight]{market}
+\end{frame}
+
+\begin{frame}{Relação entre flexibilidade e desempenho \cite{bobda}} 
+	\center	\includegraphics[height=.75\textheight]{FlexDesemp}
+\end{frame}
+
+\section{FPGAs} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Estrutura básica de um FPGA} 
+	\center	\includegraphics[height=.75\textheight]{fpgafig}
+\end{frame}
+
+\begin{frame}{Uso de LUTs para implementação de funções lógicas} 
+	\center	
+    \includegraphics[width=.3\textwidth]{lut01}
+	\includegraphics[width=.35\textwidth]{func}
+    \includegraphics[width=.3\textwidth]{lut}
+\end{frame}
+
+\begin{frame}{Circuito de uma LUT de três entradas} 
+	\center	\includegraphics[width=.5\textwidth]{lut3}
+\end{frame}
+
+\begin{frame}{Elementos Lógicos}
+	\center	\includegraphics[height=.75\textheight]{stratix_lab}
+\end{frame}
+
+\begin{frame}{Altera® Stratix}
+	\center	\includegraphics[height=.75\textheight]{stratix}
+\end{frame}
+
+\begin{frame}{Fluxo de desenvolvimento para FPGAs \cite{menotti2010.phd}} 
+	\center	\includegraphics[width=\textwidth]{fpgaflow}
+\end{frame}
+
+\begin{frame}{Codesign \cite{micheli}}
+	\center	\includegraphics[width=\textwidth]{codesign}
+\end{frame}
+
+\section{Aplicações} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{\insertsection: Password Crack}{}
+\begin{figure}
+    \includegraphics<1>[width=.75\textwidth]{Pico_WPA_final_500}
+    \includegraphics<2>[width=.75\textwidth]{6M501_}
+\end{figure}
+\end{frame}
+
+\begin{frame}{\insertsection: Catapult -- Bing -- Microsoft}{\cite{putnam2014}}
+	\center	\includegraphics[trim=320 570 50 73, clip, page=2, height=.75\textheight]{Catapult_ISCA_2014}
+\end{frame}
+
+\section{Mercado} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{\insertsection: CERN}
+	\center	\includegraphics[height=.75\textheight]{PositionCERN}
+\end{frame}
+
+
+\begin{frame}{\insertsection: LNLS} 
+	\center	\includegraphics[trim=55 275 55 70, clip, height=.75\textheight]{LNLS_estagio_DIG}
+\end{frame}
+
+\begin{frame}[fragile]{\insertsection: CI Brasil}
+        \small
+	\begin{easylist}[itemize]
+        & Programas de Formação        && EDA - Cadence Design System Inc.        & Bolsa
+        && R\$ 2.000,00        & Bibliografia Recomendada:        && CMOS VLSI Design: A Circuits and Systems Perspective Neil Weste, David Harris        && Digital Integrated Circuits: A Design Perspective, Jan M. Rabaey, Anantha Chandrakasan, Borivoje Nikolic        && Microeletrônica, Adel S. Sedra, Kenneth C. Smith        && Computer Organization and Design: The Hardware/Software Interface, David A. Patterson, John L. Hennessy	\end{easylist}
+\end{frame}
+
+\section{Referências Bibliográficas} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[allowframebreaks]{Referências Bibliográficas}
+\bibliographystyle{plainnat}
+%\bibliographystyle{ieeetr}
+\bibliography{refs}
+\end{frame}
+
+\end{document}

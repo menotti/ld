@@ -1,0 +1,17 @@
+VCD info: dumpfile dump.vcd opened for output.
+VCD warning: $dumpvars: Package ($unit) is not dumpable with VCD.
+                   0 1          x
+                  50 1          1
+                 100 0          1
+                 200 0          2
+                 300 0          3
+                 400 0          5
+                 500 0          8
+                 600 0         13
+                 700 0         21
+                 800 0         34
+                 900 0         55
+                1000 0         89
+                1100 0        144
+                1200 0        233
+13 tests completed with 0 errors

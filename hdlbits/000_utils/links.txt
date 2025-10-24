@@ -1,0 +1,2 @@
+https://hdlbits.01xz.net/wiki/Special:VlgStats/14C0F2241421DB84?InformeNovosLinksAbaixo
+:g!/http/d no vim para apagar as linhas que não contenham o padrão (deixar só os links do texto) 

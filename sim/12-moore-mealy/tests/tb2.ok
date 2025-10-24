@@ -1,0 +1,19 @@
+VCD info: dumpfile dump.vcd opened for output.
+VCD warning: $dumpvars: Package ($unit) is not dumpable with VCD.
+Testando Mealy:
+Time:  100, rst: 0, w: 0, z_mealy: 0
+Time:  150, rst: 1, w: 0, z_mealy: 0
+Time:  250, rst: 0, w: 0, z_mealy: 0
+Time:  350, rst: 0, w: 1, z_mealy: 0
+Time:  450, rst: 0, w: 0, z_mealy: 0
+Time:  550, rst: 0, w: 1, z_mealy: 0
+Time:  650, rst: 0, w: 0, z_mealy: 0
+Time:  850, rst: 0, w: 1, z_mealy: 1
+Time:  900, rst: 0, w: 1, z_mealy: 0
+Time:  950, rst: 0, w: 0, z_mealy: 0
+Time: 1150, rst: 0, w: 1, z_mealy: 1
+Time: 1200, rst: 0, w: 1, z_mealy: 0
+Time: 1350, rst: 0, w: 0, z_mealy: 0
+Time: 1550, rst: 0, w: 1, z_mealy: 1
+Time: 1600, rst: 0, w: 1, z_mealy: 0
+Time: 1650, rst: 0, w: 0, z_mealy: 0
