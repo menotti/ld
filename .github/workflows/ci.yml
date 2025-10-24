@@ -10,7 +10,16 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository with submodules
+        uses: actions/checkout@v4
+      - name: Initialize and update submodules for labs/*
+        run: |
+          git submodule init
+          for sm in labs/*; do
+            if [ -d "$sm" ]; then
+              git submodule update --init --depth=1 -- "$sm"
+            fi
+          done      
       - name: Configure Git Credentials
         run: |
           git config user.name github-actions[bot]
