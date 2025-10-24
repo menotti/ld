@@ -1,4 +1,4 @@
-# Parte prática
+# Laboratórios
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/menotti/ld)
 
@@ -14,6 +14,6 @@ As simulações com análise temporal dependem de ferramentas específicas de ca
 - [WaveTrave](https://marketplace.visualstudio.com/publishers/wavetrace)
 - [DigitalJS](https://marketplace.visualstudio.com/items/?itemName=yuyichao.digitaljs)
 
-## Laboratórios
+## Orientações
 
 Consulte o [primeiro laboratório](01_demo) para ver as ferramentas usadas no semestre atual. 
