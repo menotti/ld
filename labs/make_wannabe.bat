@@ -1,6 +1,6 @@
 @echo off
 setlocal
-set QUARTUS_PATH=C:\intelFPGA\23.1std\quartus\bin64\
+set QUARTUS_PATH=C:\intelFPGA_lite\23.1std\quartus\bin64\
 set FAMILY="Cyclone V"
 set PART=5CEBA4F23C7
 set BOARDFILE=..\DE0_CV.qsf
