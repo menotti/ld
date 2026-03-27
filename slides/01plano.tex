@@ -125,17 +125,19 @@ Ao final da disciplina o estudante deve ser capaz de:
 	% 	    \item oportunidade de estudo, fixação e esclarecimentos;
 	% 	    \item panorama de desempenho pessoal.
 	% 	\end{itemize}
-		\item A avaliação será constituída por sete provas escritas, atividades semanais realizadas durante e após as aulas e atividades realizadas em laboratório.
-		\item A média final será calculada de seguinte maneira: 
-		\begin{itemize}
-			\item $M_{final} = M_{provas}\times 0,6 + M_{praticas}\times 0,2 + M_{exerc.grupo} \times 0,15+ M_{quest.} \times 0,05 $
+		\item A avaliação será constituída por cinco provas escritas, atividades semanais realizadas durante e após as aulas e atividades realizadas em laboratório.
+	% 	\item A média final ($M_{final}$) será calculada de seguinte maneira: 
+	% 	\begin{itemize}
+			\item Se $M_{provas} < 5$ então $M_{final} = minimo(M_{provas}; M_{disciplina})$
+            \item Senão $M_{final} = M_{disciplina} = M_{provas}\times 0,6 + M_{praticas}\times 0,2 + M_{exerc.grupo} \times 0,15+ M_{quest.} \times 0,05 $
+                \item $M_{praticas} = M_{simulacoes} \times 0,5 + M_{laboratorios} \times 0,5$
 		\end{itemize}
 		\item Será aprovado o aluno que obtiver média final igual ou superior a 6. 
 		\begin{itemize}
 			\item Observação: Não haverá provas substitutivas. 
 		\end{itemize}
 	\framebreak
-		\item Questionários:
+		\item Questionários (5\%):
 		\begin{itemize}
 		    \item objetivo: preparação para as aulas síncronas;
 		     \item prazo: 00:00 de segunda-feira;
@@ -143,9 +145,25 @@ Ao final da disciplina o estudante deve ser capaz de:
 		    \item desempenho: média do resultado de cada tentativa.
 		\end{itemize}
 		
-		\item Exercícios em Grupo:
+		\item Exercícios em Grupo (15\%):
 		\begin{itemize}
 		    \item atividade síncrona (sala de aula);
+		    \item participação ativa;
+		    \item oportunidade de estudo, fixação e esclarecimentos;
+		    \item panorama de desempenho pessoal.
+		\end{itemize}
+	\framebreak
+        \item Simulações (10\%):
+		\begin{itemize}
+		    \item objetivo: preparação para as aulas práticas;
+		     \item prazo: 00:00 de segunda-feira;
+		    \item tentativas infinitas;
+		    \item desempenho: último envio.
+		\end{itemize}
+		
+		\item Laboratórios na Bancada (10\%):
+		\begin{itemize}
+		    \item consolidação da teoria (estar preparado);
 		    \item participação ativa;
 		    \item oportunidade de estudo, fixação e esclarecimentos;
 		    \item panorama de desempenho pessoal.
@@ -241,11 +259,12 @@ Ao final da disciplina o estudante deve ser capaz de:
 \begin{frame}{Apoio}
     \begin{itemize}
         % \item Laboratório disponível para uso fora do horário de aula de acordo com indicação na porta; 
-        \item Professor disponível;
+        \item Professores disponíveis;
         \item Tutorial de Verilog;
         % \item Laboratório Virtual;
         \item Monitoria/Tutoria/PET;
         \item Material de outros cursos.
+        \item Inteligência Artificial (com parcimônia)
     \end{itemize}
 \end{frame}
 
