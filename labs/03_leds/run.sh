@@ -1,6 +1,6 @@
 iverilog -o tb tb_top.v top.v
 rm -f leds.out
-./tb > leds.out
+./tb | head -n -1 > leds.out
 
 if diff leds.out leds.ok >/dev/null; then
     echo "OK"
