@@ -1,2 +1,2 @@
-sudo apt update && sudo apt install iverilog
+sudo apt update; sudo apt install iverilog
 
