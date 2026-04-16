@@ -9,7 +9,9 @@ fi
 ORG="DC-UFSCar"
 PREFIX="$1"
 
-gh repo list "$ORG" --limit 1000 --json name \
+gh auth login
+gh auth status
+gh repo list "$ORG" --limit 10000 --json name \
 | jq -r '.[].name | select(startswith("'"$PREFIX"'"))' \
 | while read repo; do
   full="$ORG/$repo"
