@@ -1,6 +1,6 @@
 iverilog -o tb top.v tb_top.v 
 rm -f gray.out
-./tb > gray.out
+./tb | grep -v "finish called at" > gray.out
 
 if diff gray.out gray.ok >/dev/null; then
     echo "OK"
