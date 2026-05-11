@@ -44,7 +44,7 @@ Preencha a tabela-verdade da função F. Antes disso, reflita: existe alguma com
 
 ## Etapa 2 — Mapa de Karnaugh
 
-Transfira os valores da tabela para o mapa abaixo. Marque os *don't cares* com **X**.
+Transfira os valores da tabela para o mapa de Karnaugh. Marque os *don't cares* com **X**.
 
 ```
         CD
@@ -61,45 +61,28 @@ Circule os maiores grupos possíveis de 1s, aproveitando os *don't cares* quando
 
 ## Etapa 3 — Implementação em Verilog
 
-Com a expressão em mãos, complete o arquivo [`descarte.v`](descarte.v) substituindo o `assign` da saída F pela equação que você obteve no mapa.
+Com a expressão obtida no mapa, crie um arquivo chamado [`top.v`](top.v) e implemente o módulo abaixo. O módulo deve declarar as entradas, as saídas, mapear os sensores e atribuir a função F que você simplificou.
 
 ```verilog
-module descarte (
+module top (
     input  [3:0] SW,
     output [9:0] LEDR
 );
 
-    wire A = SW[3];  // acima do tamanho
-    wire B = SW[2];  // abaixo do tamanho
-    wire C = SW[1];  // abaixo do peso
-    wire D = SW[0];  // machucada
+    // mapeie cada sensor ao seu switch correspondente
 
-    wire F;
+    // implemente a expressão que você obteve no Mapa de Karnaugh
 
-    assign F = /* sua expressão aqui */;
-
-    assign LEDR = {10{F}};
+    // acenda todos os LEDs quando F = 1
 
 endmodule
 ```
 
-Sintetize o projeto no Quartus Prime e faça o download para a placa.
+Transfira o arquivo para a placa DE-01 e verifique seu funcionamento.
 
-## Etapa 4 — Verificação na placa
-
-Com o projeto programado, teste ao menos cinco combinações de switches e registre os resultados. Inclua casos em que F = 0 e casos em que F = 1.
-
-| A | B | C | D | F esperado | LEDs observados | OK? |
-|---|---|---|---|------------|-----------------|-----|
-|   |   |   |   |            |                 |     |
-|   |   |   |   |            |                 |     |
-|   |   |   |   |            |                 |     |
-|   |   |   |   |            |                 |     |
-|   |   |   |   |            |                 |     |
 
 ## Entrega
 
 - Tabela-verdade preenchida com os *don't cares* identificados e justificados
 - Mapa de Karnaugh com os grupos circulados e a expressão obtida
-- Arquivo `descarte.v` com a implementação
-- Tabela de verificação na placa preenchida
+- Arquivo `top.v` com a implementação
