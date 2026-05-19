@@ -12,6 +12,6 @@ O objetivo deste laboratório é implementar um jogo de conversão de hexadecima
 
 ## Critérios de avaliação
 
-60. Implemente o funcionamento básico, instanciando os módulos `random` e `comp`, para receber a nota base para aprovação.
-70. Mostre uma palavra nos demais dígitos quando o jogador acertar para receber um incremento na nota. 
-100. Implemente um contador de tempon os demais dígitos para receber a nota máxima. Ele deve ser zerado enquanto embaralha, contar o tempo durante a tentativa e parar quando o jogador acerta. 
+* **6.0** - Implemente o funcionamento básico, instanciando os módulos `random` e `comp`, para receber a nota base para aprovação.
+* **8.0** - Mostre uma palavra nos demais dígitos quando o jogador acertar para receber um incremento na nota. 
+* **10.0** - Implemente um contador de tempo nos demais dígitos para receber a nota máxima. Ele deve ser zerado enquanto embaralha, contar o tempo durante a tentativa e parar quando o jogador acerta. 
