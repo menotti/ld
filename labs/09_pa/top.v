@@ -9,17 +9,6 @@ R:
  
 */
 
-/* Bancada:
-000000 Subistituir esta linha pelos ras e nomes
-
-1. Com que frequência este contator conta?
-R: 
-
-2. Com que frequência os digitos se alternam no display?
-R:
- 
-*/
-
 module top(
   input CLOCK_50, // 50MHz
   output [6:0] HEX1, HEX0); 
