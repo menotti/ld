@@ -1,4 +1,4 @@
-module power_on_reset(
+module por(
   input clk, 
   output reset);
 
