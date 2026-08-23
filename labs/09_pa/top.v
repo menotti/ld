@@ -18,8 +18,9 @@ module top(
   integer count = 0; // 32 bits  
   always@(posedge CLOCK_50)
     count = count + 1;
-  //assign clk1hz = count[23]; //≅1Hz https://www.google.com/search?q=50Mhz%2F2^24 
-  //power_on_reset por(CLOCK_50, rst);
+  // descomente as duas linhas abaixo para a Etapa 2
+  //assign clk1hz = count[23]; //≅3Hz https://www.google.com/search?q=50Mhz%2F2^24 
+  //por p1(CLOCK_50, rst);
 
   dec7seg dig1(count[31:28], segs1);
   dec7seg dig0(count[27:24], segs0);
