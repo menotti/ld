@@ -12,7 +12,8 @@ module top(
   assign clk1hz = counter[23];
 
   wire shuffle = SW[0]; // embaralhar
-  wire [7:0] random, guess = SW[8:1]; // palpite
+  wire [7:0] random;
+  wire [7:0] guess = SW[8:1]; // palpite
 
   // implemente a lógica do jogo aqui
 
