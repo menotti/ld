@@ -1,6 +1,6 @@
 # Somador de 1 bit com saída em display
 
-O objetivo deste laboratório é implementar um somador de 1 bit utilizando o display de 7 segmentos como saída, praticando a criação de hierarquia de módulos e sintetizando o projeto na placa fpga.
+O objetivo deste laboratório é implementar um somador de 1 bit utilizando o display de 7 segmentos como saída, praticando a criação de hierarquia de módulos e sintetizando o projeto na placa FPGA.
 
 ## Fundamentos teóricos
 
@@ -72,4 +72,4 @@ endmodule
 1. Crie o arquivo `adder.v` e implemente o módulo meio somador.
 2. Crie o arquivo `display.v` e implemente o módulo de decodificação para o display.
 3. Complete o arquivo `top.v` instanciando e conectando os dois módulos.
-4. Carregue o código para a placa fpga.
+4. Carregue o código para a placa FPGA.

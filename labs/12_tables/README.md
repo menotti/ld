@@ -66,4 +66,4 @@ module tabuada_s (
 ## Simulação e placa
 
 1. Crie o projeto com o código da tabuada, adapte a saída para BCD usando `bin2bcd` e simule.
-2. Implemente o projeto na placa fgpa.
+2. Implemente o projeto na placa FPGA.
