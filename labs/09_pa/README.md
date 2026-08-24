@@ -1,8 +1,8 @@
-# 📈 Progressão Aritmética (PA)
+# Progressão Aritmética (PA)
 
 O objetivo deste laboratório é implementar um circuito capaz de gerar os termos de uma PA, realimentando um registrador através da ULA e exibindo o resultado no display.
 
-## 📚 Fundamentos teóricos
+## Fundamentos teóricos
 
 ### Como um circuito gera uma PA
 
@@ -129,15 +129,15 @@ always@(posedge CLOCK_50)
 
 Quanto mais alto o bit escolhido, mais lenta a contagem.
 
-## 🎛️ Funcionamento na placa
+## Funcionamento na placa
 
 - `SW` é usado para informar a razão da PA;
 - Os termos devem aparecer no *display* em sequência, avançando sozinhos;
 - Ao ligar a placa o `por` zera o registrador, então a sequência começa em 0: `0, r, 2r, 3r, ...`
 
-## 🛠️ Implementação
+## Implementação
 
-### ⚙️ Etapa 1 — Responda as perguntas da bancada
+### Etapa 1 — Responda as perguntas da bancada
 
 O `top.v` vem com um contador já funcionando, que mostra dois dígitos do `count` no display. Antes de modificá-lo, use-o para responder às duas perguntas do cabeçalho do arquivo, e preencha também a linha de identificação da bancada:
 
@@ -154,7 +154,7 @@ R:
 */
 ```
 
-### 🔌 Etapa 2 — Gerador de PA (`top.v`)
+### Etapa 2 — Gerador de PA (`top.v`)
 
 Transforme o contador num gerador de PA. As linhas comentadas do `top.v` são as dicas do que precisa ser habilitado:
 
@@ -188,7 +188,7 @@ O que precisa ser feito:
 
 Depois, carregue o código para a placa FPGA. 🚀
 
-## 🏆 Critérios de avaliação
+## Critérios de avaliação
 
 * **6.0** - Implemente o funcionamento básico na placa.
 * **8.0** - Implemente um botão de *reset* sem remover o `por`.
