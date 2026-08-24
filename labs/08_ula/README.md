@@ -1,8 +1,8 @@
-# 🧮 ULA com registradores
+# ULA com registradores
 
 O objetivo deste laboratório é integrar a [ULA fornecida](alu.sv) a dois [registradores](register.sv) para testar seu funcionamento, primeiro por simulação e depois na placa.
 
-## 📚 Fundamentos teóricos
+## Fundamentos teóricos
 
 ### Unidade Lógica e Aritmética (`alu`)
 
@@ -89,7 +89,7 @@ module dec7seg (
 endmodule
 ```
 
-## 🎛️ Funcionamento na placa
+## Funcionamento na placa
 
 ![Circuito desejado](alu.png)
 
@@ -109,9 +109,9 @@ No momento 3 os switches mudam de novo, mas `a` e `b` continuam parados: com `en
 
 Sem os registradores seriam necessários 4 + 4 + 3 = **11 switches** ligados ao mesmo tempo. Com eles, 4 switches dão conta das três funções — é essa a ideia central do laboratório.
 
-## 🛠️ Implementação
+## Implementação
 
-### ⚙️ Etapa 1 — Simulação (`top.sv`)
+### Etapa 1 — Simulação (`top.sv`)
 
 Complete o `top` instanciando os dois registradores e a ULA. Nesta etapa a saída é o próprio valor de 4 bits, para que o *test bench* possa conferi-lo:
 
@@ -147,7 +147,7 @@ O arquivo `values.tv` traz um único caso de teste (`0_0_0_0`), que exercita ape
 1_1_5_4    # B - A  ->  5 - 1 = 4
 ```
 
-### 🔌 Etapa 2 — Implementação na placa (`top.sv`)
+### Etapa 2 — Implementação na placa (`top.sv`)
 
 Para levar o projeto à placa, três coisas mudam:
 
@@ -157,7 +157,7 @@ Para levar o projeto à placa, três coisas mudam:
 
 Depois, carregue o código para a placa FPGA. 🚀
 
-## 🏆 Critérios de avaliação
+## Critérios de avaliação
 
 * **6.0** - Implemente o funcionamento básico para simulação.
 * **8.0** - Implemente o funcionamento básico na placa.
