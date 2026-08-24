@@ -1,8 +1,8 @@
-# ⚖️ Comparando duas funções lógicas equivalentes (POS e SOP)
+# Comparando duas funções lógicas equivalentes (POS e SOP)
 
 O objetivo deste laboratório é comparar duas implementações equivalentes de uma mesma função lógica. A partir do [módulo fornecido](pos.v) (POS), implemente um equivalente na forma de SOP. Depois coloque ambos no kit FPGA para comparar suas saídas.
 
-## 📚 Fundamentos teóricos
+## Fundamentos teóricos
 
 ### Tabela verdade da função
 
@@ -102,7 +102,7 @@ wire [4:0] a = {5{f}};   // equivale a {f, f, f, f, f}
 
 Ele será usado para acender vários LEDs a partir de uma única saída.
 
-## 🎛️ Funcionamento na placa
+## Funcionamento na placa
 
 As entradas das funções lógicas devem ser atribuidas aos **mesmos switches** de 2 a 0 na placa, para que as funções lógicas recebam sempre as mesmas entradas.
 
@@ -112,9 +112,9 @@ Suas saídas devem ser atribuidas aos LEDs, de forma que a metade deles receba o
 
 Como as duas funções são equivalentes, na placa **os 10 LEDs devem sempre acender ou apagar juntos**, em qualquer combinação dos switches. Se alguma combinação acender só metade deles, a sua SOP não corresponde à POS.
 
-## 🛠️ Implementação
+## Implementação
 
-### ⚙️ Etapa 1 — Função SOP (`sop.v`)
+### Etapa 1 — Função SOP (`sop.v`)
 
 Crie o arquivo `sop.v` e escreva a função na forma de soma de produtos, usando os mintermos da tabela verdade. A interface deve ser idêntica à do `pos`, para que os dois módulos sejam intercambiáveis:
 
@@ -127,7 +127,7 @@ module sop (
 endmodule
 ```
 
-### 🔌 Etapa 2 — Top-level para a placa (`top.v`)
+### Etapa 2 — Top-level para a placa (`top.v`)
 
 Crie o `top` instanciando os dois módulos ligados nos **mesmos** switches, e replique cada saída para metade dos LEDs:
 
@@ -142,4 +142,4 @@ module top (
 endmodule
 ```
 
-Depois, carregue o código para a placa FPGA e percorra as 8 combinações dos switches para confirmar que as duas funções são equivalentes. 🚀
+Depois, carregue o código para a placa FPGA e percorra as 8 combinações dos switches para confirmar que as duas funções são equivalentes. 
