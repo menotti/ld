@@ -1,4 +1,4 @@
-module addsum4bits (
+module addsub4bits (
   input op,
   input signed [3:0] x, y,
   output signed [3:0] s,

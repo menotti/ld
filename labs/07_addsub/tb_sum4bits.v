@@ -7,7 +7,7 @@ module tb_sum4bits;
   reg [19:0] testvectors[0:9];
   
   // Instantiate design under test
-  addsum4bits dut(op, x, y, s, ov);
+  addsub4bits dut(op, x, y, s, ov);
 
   // generate clock 
   always begin

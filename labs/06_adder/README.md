@@ -1,6 +1,6 @@
 # Somador de 3 bits com overflow
 
-O objetivo deste laboratório é implementar e testar um somador de 3 bits com detecção de *overflow*, verificando seu funcionamento por simulação e sintetizando o projeto na placa fpga.
+O objetivo deste laboratório é implementar e testar um somador de 3 bits com detecção de *overflow*, verificando seu funcionamento por simulação e sintetizando o projeto na placa FPGA.
 
 ## Fundamentos teóricos
 
@@ -49,4 +49,4 @@ A partir do somador de 3 bits fornecido, teste seu funcionamento por simulação
    - `Cin` → `KEY[0]`
    - Entrada `X` → `SW[2]`, `SW[1]`, `SW[0]`
    - Entrada `Y` → `SW[9]`, `SW[8]`, `SW[7]`
-5. Carregue o código para a placa fpga.
+5. Carregue o código para a placa FPGA.
