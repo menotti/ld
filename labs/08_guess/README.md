@@ -1,8 +1,8 @@
-# 🎲 Jogo da conversão (HEX2BIN)
+# Jogo da conversão (HEX2BIN)
 
 O objetivo deste laboratório é implementar um jogo de conversão de hexadecimal para binário, praticando o uso de módulos sequenciais já prontos e a construção da lógica que os interliga.
 
-## 📚 Fundamentos teóricos
+## Fundamentos teóricos
 
 ### Gerador pseudoaleatório (`random`)
 
@@ -88,7 +88,7 @@ assign clk1hz = counter[23];
 
 O bit 23 troca de valor a cada 2²³ ciclos, o que dá aproximadamente **3 Hz** — uma piscada bem visível.
 
-## 🎛️ Funcionamento na placa
+## Funcionamento na placa
 
 ![Circuito desejado](base.png)
 
@@ -96,9 +96,9 @@ O bit 23 troca de valor a cada 2²³ ciclos, o que dá aproximadamente **3 Hz** 
 - O mesmo número deve ser informado na base binária em `SW[8:1]`, e enquanto isso acontece ele é mostrado nos LEDs `LEDR[8:1]`.
 - Se a conversão for bem sucedida, os LEDs laterais piscam (`LEDR[9]` e `LEDR[0]`).
 
-## 🛠️ Implementação
+## Implementação
 
-### ⚙️ Etapa 1 — Lógica do jogo (`top.v`)
+### Etapa 1 — Lógica do jogo (`top.v`)
 
 Todo o restante do `top` já está pronto: o divisor de clock, os dois `dec7seg`, a inversão dos segmentos e as ligações dos LEDs. Falta apenas instanciar os dois módulos fornecidos e produzir o sinal `match`:
 
@@ -123,7 +123,7 @@ O que precisa ser ligado:
 
 Depois, carregue o código para a placa FPGA. 🚀
 
-## 🏆 Critérios de avaliação
+## Critérios de avaliação
 
 * **6.0** - Implemente o funcionamento básico, instanciando os módulos `random` e `comp`, para receber a nota base para aprovação.
 * **8.0** - Mostre uma palavra nos demais dígitos quando o jogador acertar para receber um incremento na nota.
