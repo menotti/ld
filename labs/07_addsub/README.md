@@ -1,8 +1,8 @@
-# ➕➖ Somador/Subtrator de 4 bits com sinal
+# Somador/Subtrator de 4 bits com sinal
 
 O objetivo deste laboratório é implementar e testar um somador/subtrator de 4 bits com sinal **a partir de um somador fornecido**, verificando seu funcionamento por simulação e sintetizando o projeto na placa FPGA.
 
-## 📚 Fundamentos teóricos
+## Fundamentos teóricos
 
 ### Somador completo (`full_adder`)
 
@@ -93,7 +93,7 @@ module dec7seg (
 endmodule
 ```
 
-## 🎛️ Funcionamento na placa
+## Funcionamento na placa
 
 Deseja-se implementar um Somador/Subtrator de 4 bits utilizando como saída o valor em hexadecimal nos displays de sete segmentos. O sistema deve ter as seguintes características:
 - O *switch* `SW[9]` escolhe entre Soma=0 e Subtração=1;
@@ -103,9 +103,9 @@ Deseja-se implementar um Somador/Subtrator de 4 bits utilizando como saída o va
 - Os 2 dígitos mais à direita mostram sempre o resultado da operação;
 - Os LEDs acendem todos em caso de erro;
 
-## 🛠️ Implementação
+## Implementação
 
-### ⚙️ Etapa 1 — Somador/subtrator (`addsub4bits.v`)
+### Etapa 1 — Somador/subtrator (`addsub4bits.v`)
 
 Implemente o módulo instanciando o `sum4bits` fornecido e aplicando a técnica de complemento de 2 descrita acima. Não é necessário reescrever a lógica de soma:
 
@@ -122,7 +122,7 @@ module addsub4bits (
 endmodule
 ```
 
-### 🔌 Etapa 2 — Top-level para a placa (`top.v`)
+### Etapa 2 — Top-level para a placa (`top.v`)
 
 Complete o `top` instanciando o `addsub4bits` e os decodificadores `dec7seg` necessários, seguindo o mapeamento de pinos descrito em *Funcionamento na placa*:
 
